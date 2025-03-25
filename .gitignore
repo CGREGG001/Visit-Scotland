@@ -1,0 +1,34 @@
+
+
+# Fichiers spécifiques à macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Fichiers spécifiques à macOS (temporaires)
+._*
+.Spotlight-V100
+.Trashes
+/Volumes
+Icon?
+Thumbs.db
+
+# Fichiers de l'éditeur VS Code
+.vscode/
+
+# Fichiers de l'éditeur WebStorm
+.idea/
+
+# Fichiers de build temporaires
+dist/
+build/
+
+# Caches générés par les outils de build
+.cache/
+
+# Caches de navigateurs
+*.swp
+*.swo
+
+# Fichiers de sauvegarde
+*~
