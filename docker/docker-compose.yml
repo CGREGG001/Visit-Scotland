@@ -1,0 +1,17 @@
+services:
+  web:
+    build:
+      context: ..  # Utilise le répertoire courant comme contexte pour la construction de l'image
+      dockerfile: Dockerfile
+    image: nginx:alpine  # Nom de l'image construite
+    container_name: visit-scotland  # Nom du conteneur
+    ports:
+      - "8080:80"  # Mappe le port 80 du conteneur au port 8080 de l'hôte
+    volumes:
+      - ../html:/usr/share/nginx/html
+    networks:
+      - web-dev-exam
+
+networks:
+  web-dev-exam:
+    driver: bridge
