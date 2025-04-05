@@ -5,17 +5,27 @@
 }
 
 :root {
-    --primary-color: #C7D1D9;
-    --secondary-color: #111;
-    --third-color: #594336;
-    --fourth-color: #BF9A84;
-    --text-color: #111;
-
     --header-height: 60px;
 
-    --header-background-color: rgba(166, 162, 106, 0.41);
-    --background-color: #A6A26A;
-    --footer-background-color: #595302;
+    --header-bg-color: rgba(90, 114, 93, 0.7);
+    /*--text-menu-color: #F4F4F4;*/
+    --text-menu-color: #F9F9F6;
+
+    --main-bg-color: #9fb29f;
+    /*--main-bg-color: #C7CFC5;*/
+    --text-color: #1C1C1C;
+
+    /*--section-bg-color: #F4F4F4;*/
+    --section-bg-color: #EAEDE7;
+
+    /*--footer-bg-color: #1C1C1C;*/
+    --footer-bg-color: #405E49;
+
+    --text-footer-color: #F9F9F6;
+
+    /*--btn-bg-color: #374437;*/
+    --btn-bg-color: #5E4B3C;
+    --btn-bg-hoover-color: #405E49;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,7 +43,7 @@
 }
 
 html, body {
-    background-color: var(--background-color);
+    background-color: var(--main-bg-color);
     font-family: "Roboto Thin", sans-serif;
     color: var(--text-color);
     scroll-behavior: smooth;
@@ -43,6 +53,7 @@ html, body {
     font-weight: bold;
     width: 140px;
     margin-right: 30px;
+    color: var(--text-menu-color);
 
     display: flex;
     align-items: center;
@@ -51,7 +62,6 @@ html, body {
     span {
         font-size: 1.2rem;
         text-transform: capitalize;
-        border-bottom: 1px solid var(--text-color);
     }
 
     img {
@@ -63,22 +73,21 @@ html, body {
 .btn {
     text-decoration: none;
     padding: 0.4rem 0.75rem;
-    border-radius: 8px;
-    background-color: darkgrey;
+    border-radius: 4px;
+    color: var(--text-menu-color);
+    background-color: var(--btn-bg-color);
     transition: background-color 0.3s ease-in-out;
-    color: black;
-    font-weight: bold;
     cursor: pointer;
 
     &:hover {
-        background-color: dimgrey;
+        background-color: var(--btn-bg-hoover-color);
     }
 }
 
 
 header {
     height: var(--header-height);
-    background-color: var(--header-background-color);
+    background-color: var(--header-bg-color);
     backdrop-filter: blur(10px);
     width: 100%;
     position: fixed;
@@ -110,7 +119,7 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: var(--text-color);
+                    color: var(--text-menu-color);
                     font-weight: 600;
                     padding: 4px 10px;
 
@@ -161,7 +170,7 @@ main {
 
     #welcome {
         max-width: 1000px;
-        background-color: var(--primary-color);
+        background-color: var(--section-bg-color);
         padding: 3rem;
         text-align: justify;
         z-index: 1;
@@ -190,10 +199,10 @@ main {
     }
 
     #culture, #newsletter {
-        background-color: var(--primary-color);
+        background-color: var(--section-bg-color);
     }
 
-    #culture, #contact , #newsletter {
+    #culture, #contact, #newsletter {
         padding: 4rem 0;
     }
 
@@ -201,7 +210,7 @@ main {
         width: 100%;
 
         p {
-            padding: 1rem;
+            margin-bottom: 1.2rem;
         }
 
         .decouverte-container, .culture-container, .contact-container, .newsletter-container {
@@ -230,39 +239,70 @@ main {
 }
 
 footer {
-    background-color: var(--footer-background-color);
+    width: 100%;
+    color: var(--text-footer-color);
+    padding: 1rem 0;
+    background-color: var(--footer-bg-color);
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .logo {
-        padding: 10px 0;
-    }
-
     .footer-container {
-        max-width: 1280px;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 2rem;
+
+        border-top: 1px solid var(--text-footer-color);
+        border-bottom: 1px solid var(--text-footer-color);
+
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        .logo{
+            padding: 0.4rem;
+        }
+
+        h4{
+            font-size: 1.2rem;
+            padding-bottom: 0.5rem;
+        }
 
         ul {
             list-style: none;
-        }
 
-        a {
-            color: white;
-            text-decoration: none;
+            li{
+                padding-top: 0.4rem;
+            }
+            a {
+                color: var(--text-footer-color);
+                transition: color 0.3s ease-in-out;
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--text-menu-color);
+                }
+            }
         }
 
         .footer-menu {
-            color: var(--text-color);
+            width: 400px;
+        }
+
+        .footer-follow {
+            width: 400px;
         }
     }
 
     .copyright {
+        margin-top: 1rem;
         padding: 10px 0;
-        color: var(--text-color);
-    }
 
+    }
 }
+
+
+
