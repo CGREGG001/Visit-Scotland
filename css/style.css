@@ -1,0 +1,268 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #C7D1D9;
+    --secondary-color: #111;
+    --third-color: #594336;
+    --fourth-color: #BF9A84;
+    --text-color: #111;
+
+    --header-height: 60px;
+
+    --header-background-color: rgba(166, 162, 106, 0.41);
+    --background-color: #A6A26A;
+    --footer-background-color: #595302;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: rgb(20, 20, 20);
+        --secondary-color: #333;
+        --third-color: #402E24;
+        --fourth-color: #735E51;
+        --text-color: #D9D9D9;
+
+        --background-color: #212121;
+        --header-background-color: rgba(33, 33, 33, 0.7);
+        --footer-background-color: #010101;
+    }
+}
+
+html, body {
+    background-color: var(--background-color);
+    font-family: "Roboto Thin", sans-serif;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+.logo {
+    font-weight: bold;
+    width: 140px;
+    margin-right: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    span {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    img {
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    background-color: darkgrey;
+    transition: background-color 0.3s ease-in-out;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background-color: dimgrey;
+    }
+}
+
+
+header {
+    height: var(--header-height);
+    background-color: var(--header-background-color);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+
+    display: flex;
+    justify-content: center;
+
+    .header-container {
+        width: 1280px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu {
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    padding-left: 30px;
+
+                    &:last-child {
+                        padding-right: 30px;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--text-color);
+                    font-weight: 600;
+                    padding: 4px 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+    }
+
+    #bg-video {
+        width: 100vw;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+        .video-container {
+            video {
+                width: 100vw;
+                height: 80vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    #welcome {
+        max-width: 1000px;
+        background-color: var(--primary-color);
+        padding: 3rem;
+        text-align: justify;
+        z-index: 1;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+
+        .welcome-title {
+            h1 {
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .welcome-text {
+            p {
+                font-size: 1rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    #decouverte {
+        padding-bottom: 4rem;
+    }
+
+    #culture, #newsletter {
+        background-color: var(--primary-color);
+    }
+
+    #culture, #contact , #newsletter {
+        padding: 4rem 0;
+    }
+
+    #decouverte, #culture, #contact, #newsletter {
+        width: 100%;
+
+        p {
+            padding: 1rem;
+        }
+
+        .decouverte-container, .culture-container, .contact-container, .newsletter-container {
+            max-width: 1280px;
+            margin: 2rem auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+
+            .decouverte-item, .culture-item, .contact-item, .newsletter-item {
+                max-width: 60%;
+            }
+
+            .decouverte-img, .culture-img, .newsletter-img {
+                img {
+                    max-width: 400px;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    background-color: var(--footer-background-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+        padding: 10px 0;
+    }
+
+    .footer-container {
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-menu {
+            color: var(--text-color);
+        }
+    }
+
+    .copyright {
+        padding: 10px 0;
+        color: var(--text-color);
+    }
+
+}
