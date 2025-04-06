@@ -2,6 +2,36 @@
 
 This project is a static and responsive mini-website developed using HTML and CSS as part of the IPFA BIDA 01 exam. It offers an immersive discovery of Scotland through visual and audio content while ensuring a smooth experience on all screen sizes (desktop, tablet, mobile).
 
+
+## Local Deployment with Docker
+This project uses **Docker** and **docker-compose** to run the static site in a container. This ensures identical execution on all machines, without manual server configuration.
+
+### Files Used
+-   `.env`: Contains environment variables
+-   `Dockerfile`: Defines the Docker image based on a lightweight web server (**Nginx**)
+-   `docker-compose.yml`: Orchestrates and launches the container
+
+### Prerequisites
+-   [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
+-   `docker-compose` (included with Docker Desktop)
+
+### Run the Site Locally
+```bash
+# Clone the project
+git clone https://github.com/CGREGG001/visit-scotland.git 
+# Note: I used "my-user" as in your previous example. Change if "mon-utilisateur" was intended literally.
+cd visit-scotland
+# Start the container
+docker-compose up --build
+```
+The site will be accessible at:
+http://localhost:8080
+
+### To stop the container
+```bash
+docker-compose down
+```
+
 ## Site Structure (4 Pages)
 1. **Home** – General introduction to the website and Scotland.
 2. **Discovery** – Enriched content with images and videos of iconic landscapes.
@@ -21,10 +51,37 @@ This project is a static and responsive mini-website developed using HTML and CS
 - Configure a web server to handle requests, security, and redirects.
 - Containerize applications for consistent and reproducible deployment.
 
+___
+
 
 # Examen Web IPFA BIDA 01
 
 Ce projet est un mini-site web statique et responsive développé en HTML et CSS dans le cadre de l’examen IPFA BIDA 01. Il permet une découverte immersive de l’Écosse à travers des contenus visuels et sonores, tout en garantissant une expérience fluide sur tous les écrans (ordinateurs, tablettes, mobiles).
+
+## Déploiement local avec Docker
+Ce projet utilise **Docker** et **docker-compose** pour exécuter le site statique dans un conteneur. Cela garantit une exécution identique sur toutes les machines, sans configuration manuelle du serveur.
+### Fichiers utilisés
+- `.env` : Contient les variables d’environnement
+- `Dockerfile` : Définit l’image Docker à partir d’un serveur web léger (**Nginx**)
+- `docker-compose.yml` : Orchestration et lancement du conteneur
+### Prérequis
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installé
+- `docker-compose` (inclus avec Docker Desktop)
+### Lancer le site en local
+```bash
+# Cloner le projet
+git clone https://github.com/CGREGG001/visit-scotland.git
+cd visit-scotland
+# Lancer le conteneur
+docker-compose up --build
+```
+Le site sera accessible à l’adresse :
+http://localhost:8080
+
+### Pour arrêter le conteneur
+```bash
+docker-compose down
+```
 
 ## Structure du site (4 pages)
 1. **Accueil** – Présentation générale du site et introduction à l’Écosse.
