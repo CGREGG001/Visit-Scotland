@@ -51,8 +51,7 @@ docker-compose down
 - Configure a web server to handle requests, security, and redirects.
 - Containerize applications for consistent and reproducible deployment.
 
-___
-
+---
 
 # Examen Web IPFA BIDA 01
 
@@ -101,3 +100,56 @@ docker-compose down
 - Concevoir un design adaptatif (responsive) pour une meilleure accessibilité.
 - Configurer un serveur web pour gérer les requêtes, la sécurité et les redirections.
 - Conteneuriser les applications pour un déploiement cohérent et reproductible.
+
+
+
+# Theme Preview
+
+The website automatically adapts to your system’s theme preference:  
+light if your system is in light mode, dark if it’s in dark mode.  
+No action is required from the user — it works seamlessly.
+
+
+### Light Mode
+![Light Mode](docs/images/lightMode.png)
+
+---
+
+### Dark Mode
+![Dark Mode](docs/images/darkMode.png)
+
+---
+
+# Responsive Design
+
+The website is fully responsive and adapts seamlessly to all screen sizes.  
+Below are previews on various devices.
+
+
+### Desktop
+
+![Desktop view](docs/images/responsiveDesktop.png)
+
+---
+
+### Tablets
+
+**iPad Pro**
+
+![iPad Pro view](docs/images/responsiveIpadPro.png)
+
+**iPad Mini**
+
+![iPad Mini view](docs/images/ResponsiveIpadMini.png)
+
+---
+
+### Smartphones
+
+**iPhone 12 Pro**
+
+![iPhone 12 Pro view](docs/images/ResponsiveIphone12.png)
+
+**iPhone SE**
+
+![iPhone SE view](docs/images/responsiveIphoneSe.png)

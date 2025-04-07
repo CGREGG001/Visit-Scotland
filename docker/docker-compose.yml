@@ -1,7 +1,7 @@
 services:
   web:
     build:
-      context: ..  # Utilise le répertoire courant comme contexte pour la construction de l'image
+      context: .  # Utilise le répertoire courant comme contexte pour la construction de l'image
       dockerfile: Dockerfile
     image: nginx:alpine  # Nom de l'image construite
     container_name: visit-scotland  # Nom du conteneur
