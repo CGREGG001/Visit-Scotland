@@ -1,0 +1,190 @@
+/* Ipad & Laptop */
+@media (min-width: 768px) and (max-width: 1140px) {
+
+    main {
+
+        #bg-video {
+            width: 100%;
+
+            .video-container {
+                video {
+                    height: 100%;
+                }
+            }
+        }
+
+        #welcome {
+            width: 100%;
+            text-align: center;
+            border-radius: 0;
+            transform: translate(0, 0);
+        }
+
+        #decouverte, #culture, #contact, #newsletter {
+            .decouverte-container, .culture-container, .contact-container, .newsletter-container {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .decouverte-item, .culture-item, .contact-item, .newsletter-item {
+                    max-width: 100%;
+                }
+
+                .decouverte-img, .culture-img {
+                    width: 100%;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        #decouverte {
+            h2 {
+                padding-top: 5rem;
+            }
+        }
+
+        #culture, #contact {
+            h2 {
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+/* SMARTPHONES */
+@media screen and (max-width: 768px) {
+
+    header {
+        position: static;
+        background-color: var(--header-bg-color);
+        flex-direction: column;
+        height: auto;
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            align-items: center;
+
+            .menu ul {
+                padding-top: 1rem;
+                text-align: center;
+
+                li {
+                    display: block;
+                    text-align: center;
+                    padding: 10px 0;
+
+                    &:last-child {
+                        padding-right: 0;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            display: none;
+        }
+
+    }
+
+    main {
+
+        section {
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+        }
+
+        #bg-video {
+            width: 100%;
+
+            .video-container {
+                video {
+                    height: 100%;
+                }
+            }
+        }
+
+        #welcome {
+            width: 100%;
+            text-align: center;
+            border-radius: 0;
+            transform: translate(0, 0);
+        }
+
+        #decouverte {
+            h2 {
+                padding-top: 3rem;
+            }
+        }
+
+        #decouverte, #culture{
+
+            h2{
+                padding-bottom: 0;
+            }
+            h3{
+                padding-bottom: 0;
+            }
+        }
+
+        #decouverte, #culture, #contact, #newsletter {
+            .decouverte-container, .culture-container, .contact-container, .newsletter-container {
+                width: 90%;
+
+                .decouverte-item, .culture-item, .contact-item, .newsletter-item {
+                    min-width: 100%;
+                }
+
+                .decouverte-img, .culture-img {
+                    width: 100%;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                .newsletter-img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 1rem 0.5rem;
+
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+
+            .footer-menu, .footer-follow {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    }
+}

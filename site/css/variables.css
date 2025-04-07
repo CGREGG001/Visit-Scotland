@@ -1,0 +1,28 @@
+:root {
+    --header-height: 60px;
+    --header-bg-color: rgba(90, 114, 93, 0.7);
+    --text-menu-color: #F9F9F6;
+    --main-bg-color: #9fb29f;
+    --text-color: #1C1C1C;
+    --section-bg-color: #EAEDE7;
+    --footer-bg-color: #405E49;
+    --text-footer-color: #F9F9F6;
+    --text-footer-hover-color: #3d2a1d;
+    --btn-bg-color: #5E4B3C;
+    --btn-bg-hover-color: #405E49;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --header-bg-color: rgba(28, 28, 28, 0.7);
+        --text-menu-color: #9fb29f;
+        --main-bg-color: #1f251f;
+        --text-color: #EAEDE7;
+        --section-bg-color: #313631;
+        --footer-bg-color: #1b1f1c;
+        --text-footer-color: #9fb29f;
+        --text-footer-hover-color: #405E49;
+        --btn-bg-color: #405E49;
+        --btn-bg-hover-color: #5E4B3C;
+    }
+}
