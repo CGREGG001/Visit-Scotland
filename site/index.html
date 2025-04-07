@@ -2,13 +2,19 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visitez l'Écosse</title>
+  <meta name="description"
+        content="Partez à la découverte de l’Écosse à travers ses paysages grandioses, son histoire fascinante et sa culture unique. Vivez une aventure inoubliable entre nature sauvage, traditions celtiques et accueil chaleureux.">
+  <meta name="author" content="Colard Gregory">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
 
 <header>
@@ -22,21 +28,22 @@
       </ul>
     </nav>
     <div class="logo">
-      <img src="assets/images/logo_white.svg" alt="logo">
+      <a href="index.html"><img src="assets/images/logo_white.svg" alt="logo"></a>
       <span>Scotland</span>
     </div>
   </div>
 </header>
 
 <main>
-  <section id="bg-video">
+  <div id="bg-video">
     <div class="video-container">
       <video loop muted autoplay>
         <source src="assets/video/Scotland-cut.mp4" type="video/mp4">
+        <!-- fallback content -->
         Votre navigateur ne supporte pas la balise vidéo.
       </video>
     </div>
-  </section>
+  </div>
 
   <section id="welcome">
     <div class="welcome-title">
@@ -71,7 +78,7 @@
         <p>Préparez-vous à une aventure riche en émotions, entre nature grandiose, patrimoine fascinant et moments hors
           du temps.</p>
 
-          <a href="decouverte.html" class="btn">Découvrez sans attendre</a>
+        <a href="decouverte.html" class="btn">Découvrez sans attendre</a>
       </div>
 
       <div class="decouverte-img">
@@ -145,7 +152,7 @@
     <span>Scotland</span>
   </div>
   <!--  L'élément <footer> possède souvent différents liens, il n'a pour autant pas besoin d'être dans un élément <nav>.-->
-  <!--  http://developer.mozilla.org/fr/docs/Web/HTML/Element/nav-->
+  <!--  https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav-->
   <div class="footer-container">
     <div class="footer-menu">
       <h4>Liens rapides</h4>
