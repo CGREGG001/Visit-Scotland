@@ -1,22 +1,45 @@
-const hamburgerToggle = document.querySelector(".burger");
-const navLinksContainer = document.querySelector(".navLinks");
+const burgerToggle = document.querySelector(".burger");
+const navLinks = document.querySelector(".navLinks");
 
-function toggleNav() {
-    hamburgerToggle.classList.toggle("open");
+function toggleNav(event) {
+    event.stopPropagation(); // Évite de déclencher l’événement du document
+    burgerToggle.classList.toggle("open");
+    navLinks.classList.toggle("open");
 
-    const ariaToggle = hamburgerToggle.getAttribute("aria-expanded") === "true" ? "false" : "true";
-    hamburgerToggle.setAttribute("aria-expanded", ariaToggle);
-    navLinksContainer.classList.toggle("open");
+    const isExpanded = burgerToggle.getAttribute("aria-expanded") === "true";
+    burgerToggle.setAttribute("aria-expanded", String(!isExpanded));
 }
 
-hamburgerToggle.addEventListener("click", toggleNav);
+function closeNav() {
+    burgerToggle.classList.remove("open");
+    navLinks.classList.remove("open");
+    burgerToggle.setAttribute("aria-expanded", "false");
+}
 
-new ResizeObserver(entries => {
+burgerToggle.addEventListener("click", toggleNav);
 
-    if (entries[0].contentRect.width <= 900) {
-        navLinksContainer.style.transition = "transform 0.4s ease-out";
-    } else {
-        navLinksContainer.style.transition = "none";
+// Clic *dans* le menu, mais PAS sur un lien → fermer
+navLinks.addEventListener("click", function (event) {
+    const isLink = event.target.closest("a");
+
+    if (!isLink && burgerToggle.classList.contains("open")) {
+        closeNav();
     }
+});
 
+// Transition fluide pour mobile
+new ResizeObserver(entries => {
+    if (entries[0].contentRect.width <= 768) {
+        navLinks.style.transition = "transform 0.4s ease-out";
+    } else {
+        navLinks.style.transition = "none";
+    }
 }).observe(document.body);
+
+
+// Touche Échap pour fermeture
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && burgerToggle.classList.contains("open")) {
+        closeNav();
+    }
+});

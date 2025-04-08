@@ -21,15 +21,14 @@
 <header>
   <div class="header-container">
     <nav>
-      <div class="menu">
-        <button class="burger" type="button" aria-label="ouvrir ou fermer le menu de navigation"
-                aria-expanded="false">
+      <div class="menu" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false">
+        <button type="button" class="burger">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <div class="navLinks">
+        <div class="navLinks" role="navigation">
           <ul>
             <li><a href="#" aria-current="page">Accueil</a></li>
             <li><a href="decouverte.html">Découvrir</a></li>
@@ -46,6 +45,7 @@
         <span>Scotland</span>
       </a>
     </div>
+
   </div>
 </header>
 
@@ -162,11 +162,12 @@
 
 <footer>
   <div class="logo">
-    <img src="assets/images/logo_white.svg" alt="logo">
-    <span>Scotland</span>
+    <a href="#" aria-label="Haut de page">
+      <img src="assets/images/logo_white.svg" alt="logo du site Scotland">
+      <span>Scotland</span>
+    </a>
   </div>
-  <!--  L'élément <footer> possède souvent différents liens, il n'a pour autant pas besoin d'être dans un élément <nav>.-->
-  <!--  https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav-->
+  <!--  L'élément <footer> possède souvent différents liens, il n'a pour autant pas besoin d'être dans un élément <nav></nav>> cfr https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav -->
   <div class="footer-container">
     <div class="footer-menu">
       <h4>Liens rapides</h4>
@@ -180,16 +181,37 @@
 
     <div class="footer-follow">
       <h4>Suivez-nous</h4>
-      <ul>
-        <li><a href="https://www.facebook.com/visitscotland/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/visitscotland/" target="_blank">Instagram</a></li>
-        <li><a href="https://x.com/VisitScotland" target="_blank">X</a></li>
-      </ul>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/visitscotland/" target="_blank">
+              <img src="assets/images/social_icons/instagram.png" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@visitscotland" target="_blank">
+              <img src="assets/images/social_icons/youtube.png" alt="Youtube">
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/VisitScotland" target="_blank">
+              <img src="assets/images/social_icons/twitter.png" alt="X ex-twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/visitscotland" target="_blank">
+              <img src="assets/images/social_icons/facebook.png" alt="facebook">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <div class="copyright">
-    <p>&copy; 2025 Visitez l'Écosse - Tous droits réservés</p>
+    <p>&copy; 2025 Visitez l'Écosse</p>
+    <img src="assets/images/social_icons/duck.png" alt="Easter egg">
+    <p>Tous droits réservés</p>
   </div>
 </footer>
 
