@@ -13,23 +13,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+  <script src="scripts/nav.js" defer></script>
 </head>
 
 <body>
 
 <header>
   <div class="header-container">
-    <nav class="menu">
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="decouverte.html">Découvrir</a></li>
-        <li><a href="culture.html">Culture &amp; Traditions</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav>
+      <div class="menu">
+        <button class="burger" type="button" aria-label="ouvrir ou fermer le menu de navigation"
+                aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navLinks">
+          <ul>
+            <li><a href="#" aria-current="page">Accueil</a></li>
+            <li><a href="decouverte.html">Découvrir</a></li>
+            <li><a href="culture.html">Culture &amp; Traditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
     <div class="logo">
-      <a href="index.html"><img src="assets/images/logo_white.svg" alt="logo"></a>
-      <span>Scotland</span>
+      <a href="index.html" aria-label="Accueil - Visitez l'Écosse">
+        <img src="assets/images/logo_white.svg" alt="logo du site Scotland">
+        <span>Scotland</span>
+      </a>
     </div>
   </div>
 </header>
@@ -65,7 +80,6 @@
     <h3>À voir &amp; à faire en Écosse</h3>
 
     <div class="decouverte-container">
-
       <div class="decouverte-item">
         <p>L’Écosse est une terre de contrastes, où l’histoire millénaire rencontre la nature sauvage et indomptée. Des
           châteaux perchés sur des falaises aux lochs mystérieux entourés de montagnes majestueuses, chaque coin du pays
