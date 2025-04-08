@@ -15,6 +15,14 @@ html, body {
     align-items: center;
     justify-content: space-evenly;
 
+    a {
+        color: var(--text-menu-color);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
     span {
         font-size: 1.2rem;
         text-transform: capitalize;
@@ -22,7 +30,6 @@ html, body {
 
     img {
         height: 40px;
-        border-radius: 50%;
     }
 }
 
@@ -40,10 +47,14 @@ html, body {
     }
 }
 
+.burger {
+    display: none;
+}
+
 header {
     height: var(--header-height);
     background-color: var(--header-bg-color);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -95,20 +106,26 @@ main {
     section {
         text-align: center;
 
-        h1 {
+        h1, h2 {
             font-size: 2rem;
+            padding-bottom: 1rem;
         }
 
         h2 {
+            text-align: center;
             color: var(--btn-bg-color);
-            font-size: 2rem;
             text-transform: uppercase;
-            padding-bottom: 1rem;
         }
 
         h3 {
             font-size: 1.2rem;
             text-transform: capitalize;
+            text-align: center;
+        }
+
+        a.btn{
+            display: inline-block;
+            margin-top: 2rem;
         }
     }
 
@@ -132,7 +149,7 @@ main {
     #welcome {
         max-width: 1400px;
         background-color: var(--section-bg-color);
-        padding: 3rem;
+        padding: 4rem 3rem;
         text-align: justify;
         border-radius: 6px;
         z-index: 1;
@@ -158,12 +175,13 @@ main {
         padding-bottom: 4rem;
     }
 
-    #decouverte, #culture{
+    #decouverte, #culture {
 
-        h2{
+        h2 {
             padding-bottom: 3rem;
         }
-        h3{
+
+        h3 {
             padding-bottom: 3rem;
         }
     }
