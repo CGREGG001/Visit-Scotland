@@ -1,0 +1,114 @@
+main {
+
+
+    #introduction, #piliers-culture, #conclusion {
+        h3 {
+            font-size: 1.8rem;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    }
+
+    #introduction {
+        max-width: 1200px;
+
+        .introduction-p {
+            padding: 0 2rem;
+        }
+    }
+
+    #piliers-culture {
+        background-color: var(--section-bg-color);
+
+        .culture-item {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid var(--text-color);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+
+            figure {
+                width: 70%;
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid var(--btn-bg-color);
+                /*background-color: var(--main-bg-color);*/
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+                border-radius: 6px 6px 0 0;
+
+                img {
+                    width: 100%;
+                    display: block;
+                    object-fit: cover;
+
+                    border-radius: 6px 6px 0 0;
+                }
+
+                figcaption {
+                    padding: 1rem .5rem;
+                }
+            }
+
+            .audio-samples {
+                width: 100%;
+                margin-top: 4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* Style pour le conteneur figure */
+
+                figure {
+                    margin: 20px 0;
+                    padding: 15px;
+                    background-color: transparent;
+                    border-radius: 6px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+                    figcaption {
+                        color: var(--text-color);
+                    }
+
+                    /* Style de base pour l'élément audio */
+
+                    audio {
+                        width: 100%; /* Largeur complète du conteneur */
+                        height: 40px; /* Hauteur fixe */
+                        margin: 10px 0; /* Marge verticale */
+                    }
+
+                    audio::-webkit-media-controls-play-button {
+                        background-color: var(--btn-bg-color); /* Vert écossais */
+                        border-radius: 50%;
+                        color: red;
+                    }
+
+                    audio::-webkit-media-controls-panel {
+                        background-color: var(--main-bg-color);
+                        border-radius: 0;
+                        border: none    ;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #conclusion {
+        max-width: 1200px;
+        padding: 2rem;
+    }
+
+
+}
