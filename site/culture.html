@@ -2,168 +2,264 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Culture Écossaise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture Écossaise - Visitez l'Écosse</title>
+  <meta name="description"
+        content="Explorez la richesse de la culture écossaise : traditions celtiques, musique entraînante, kilts, légendes des Highlands et hospitalité chaleureuse. Un voyage au cœur d’une identité forte et fascinante.">
+  <meta name="author" content="Colard Gregory">
+  <meta name="keywords" content="Écosse, Culture, Traditions, voyage, Visitez l'Écosse">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  <script src="scripts/nav.js" defer></script>
 </head>
 <body>
 
 <header>
-  <div>
-    <img src="assets/images/logo_white.svg" alt="logo" height="48">
-    <span>Écosse</span>
+  <div class="header-container">
+    <nav>
+      <div class="menu" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false">
+        <button type="button" class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navLinks" role="navigation">
+          <ul>
+            <li><a href="#" aria-current="page">Accueil</a></li>
+            <li><a href="decouverte.html">Découvrir</a></li>
+            <li><a href="culture.html">Culture &amp; Traditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="vache">
+            <img src="assets/images/social_icons/vache.svg" alt="tete de vache écossaise">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="logo">
+      <a href="index.html" aria-label="Accueil - Visitez l'Écosse">
+        <img src="assets/images/logo_white.svg" alt="Logo du site Visitez l'Écosse">
+        <span>Scotland</span>
+      </a>
+    </div>
+
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="decouverte.html">Découvrir</a></li>
-      <li><a href="culture.html">Culture &amp; Traditions</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 </header>
 
 <main>
-  <div>
-    <h1>Culture Écossaise : Un Héritage Riche et Vivant</h1>
-  </div>
-
-  <section>
-    <div>
+  <section id="introduction">
+    <h1>Un Héritage Riche et Vivant</h1>
+    <div class="introduction-p">
       <p>Terre de légendes et de paysages sauvages, l'Écosse possède une culture unique et vibrante, façonnée par des
         siècles d'histoire,
         de musique, de traditions et de fierté. Explorez un monde où les kilts dansent au son des cornemuses, où les
         contes de fées se mêlent à la réalité,
         et où l'hospitalité est une valeur sacrée.</p>
     </div>
+  </section>
 
-    <div>
-      <h2>Les Piliers de la Culture Écossaise</h2>
-    </div>
+  <section id="piliers-culture">
+    <h2>Les Piliers de la Culture Écossaise</h2>
 
-    <div>
+    <article class="culture-item">
       <h3>Le Kilt et les Tartans : Une Identité Tissée</h3>
       <p>Bien plus qu'un simple vêtement, le kilt est un symbole fort de l'identité écossaise, représentant la fierté
         clanique et l'héritage familial.
         Chaque tartan, avec ses motifs et couleurs spécifiques, est associé à un clan ou une région. Découvrez
         l'histoire fascinante
         derrière ces tissus emblématiques et apprenez à distinguer les différents tartans.</p>
-      <img src="assets/images/kilts.jpg" alt="Kilt" width="400">
-      <a href="#">En savoir plus sur les kilts et les tartans</a>
-    </div>
+      <figure>
+        <img src="assets/images/kilts.jpg" alt="Homme portant un kilt traditionnel écossais avec ses accessoires">
+        <figcaption>Tenue traditionnelle écossaise avec kilt et accessoires</figcaption>
+      </figure>
+      <div class="btn">
+        <a href="404.html" title="Explorez l'histoire et la signification des kilts et tartans écossais">En savoir plus sur les kilts et les tartans</a>
+      </div>
+    </article>
 
-    <div>
+    <article class="culture-item">
       <h3>La Cornemuse : L'Âme de l'Écosse</h3>
       <p>Le son envoûtant de la cornemuse, ou "pìob mhòr" en gaélique, résonne dans les vallées et montagnes écossaises
         depuis des siècles.
         Jadis un instrument de guerre, elle est aujourd'hui un symbole de célébration et de commémoration, jouée lors
         des mariages, funérailles,
         festivals et défilés. Laissez-vous emporter par sa mélodie puissante et émotive.</p>
-      <img src="assets/images/bagpipe.jpg" alt="Cornemuse" width="400">
-      <a href="#">Découvrez l'histoire de la cornemuse</a>
-    </div>
+      <figure>
+        <img src="assets/images/bagpipe.jpg" alt="Joueur de cornemuse écossaise en tenue traditionnelle">
+        <figcaption>Un joueur de cornemuse traditionnelle écossaise</figcaption>
+      </figure>
+      <div class="btn">
+        <a href="404.html"
+           title="Découvrez l'origine et l'importance de la cornemuse dans la culture écossaise">Découvrez
+          l'histoire de
+          la cornemuse</a>
+      </div>
+    </article>
 
-    <div>
-      <div>
-        <h3>Musique et Danse : Une Expression de Joie et de Tradition</h3>
-        <p>La musique traditionnelle écossaise, avec ses ballades mélancoliques, ses jigs entraînants et ses reels
-          rapides, est une source de fierté et de divertissement.
-          La danse, qu'il s'agisse des danses de groupe dynamiques des ceilidhs ou des mouvements gracieux des danses
-          des
-          Highlands, est une façon festive
-          de célébrer la culture écossaise.</p>
-        <img src="assets/images/danse.webp" alt="danse" width="400">
-        <a href="#">Plongez dans l'univers de la musique et de la danse écossaise</a>
+    <article class="culture-item">
+      <h3>Musique et Danse : Une Expression de Joie et de Tradition</h3>
+      <p>La musique traditionnelle écossaise, avec ses ballades mélancoliques, ses jigs entraînants et ses reels
+        rapides, est une source de fierté et de divertissement.
+        La danse, qu'il s'agisse des danses de groupe dynamiques des ceilidhs ou des mouvements gracieux des danses
+        des Highlands, est une façon festive
+        de célébrer la culture écossaise.</p>
+      <figure>
+        <img src="assets/images/danse.webp" alt="Danseurs écossais exécutant une danse traditionnelle Highland">
+        <figcaption>Danse traditionnelle des Highlands écossais</figcaption>
+      </figure>
+      <div class="btn">
+        <a href="404.html" title="Explorez les traditions musicales et chorégraphiques écossaises">Plongez
+          dans l'univers de la musique et de la danse écossaise</a>
       </div>
 
-      <div>
-        <audio controls>
-          <source src="assets/audio/sound-effect-amazing-grace-on-bagpipes-202411.mp3" type="audio/mpeg">
-          Votre navigateur ne supporte pas l'élément audio.
-        </audio>
+      <div class="audio-samples">
+        <figure>
+          <figcaption>Écouter "Amazing Grace" à la cornemuse</figcaption>
+          <audio controls>
+            <source src="assets/audio/sound-effect-amazing-grace-on-bagpipes-202411.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'élément audio.
+          </audio>
+        </figure>
+        <figure>
+          <figcaption>Écouter "Scotland the Brave"</figcaption>
+          <audio controls>
+            <source src="assets/audio/scotland-the-brave-traditionally-scottish-musette-1311.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'élément audio.
+          </audio>
+        </figure>
       </div>
-      <div>
-        <audio controls>
-          <source src="assets/audio/scotland-the-brave-traditionally-scottish-musette-1311.mp3" type="audio/mpeg">
-          Votre navigateur ne supporte pas l'élément audio.
-        </audio>
-      </div>
+    </article>
 
-    </div>
-
-
-    <div>
+    <article class="culture-item">
       <h3>Le Gaélique : Une Langue Ancestrale</h3>
       <p>Bien que moins parlé aujourd'hui, le gaélique écossais est une langue celtique ancienne qui fait partie
         intégrante du patrimoine culturel du pays.
         Des efforts sont faits pour préserver et promouvoir son usage à travers l'éducation, les médias et les
         événements culturels.
         Découvrez la beauté et la richesse de cette langue unique.</p>
-      <img src="assets/images/gaelic.avif" alt="alphabet gaelic" width="400">
-      <a href="#">Apprenez-en plus sur le gaélique écossais</a>
-    </div>
+      <figure>
+        <img src="assets/images/gaelic.avif" alt="Tableau en gaélique écossais montrant l'alphabet et son utilisation">
+        <figcaption>Alphabet gaélique écossais</figcaption>
+      </figure>
+      <div class="btn">
+        <a href="404.html" title="Apprenez les bases du gaélique écossais et son histoire">Apprenez-en
+          plus
+          sur le gaélique écossais</a>
+      </div>
+    </article>
 
-    <div>
+    <article class="culture-item">
       <h3>Festivals et Événements : Célébrer l'Écosse</h3>
       <p>Tout au long de l'année, l'Écosse s'anime de festivals et d'événements mettant en valeur sa culture et ses
         traditions.
         Des Highland Games, qui mettent à l'épreuve la force et l'adresse, aux festivals de musique celtique et aux
         célébrations de la Burns Night,
         il y a toujours une occasion de découvrir la joie de vivre écossaise.</p>
-      <img src="assets/images/festival.webp" alt="festival" width="400">
-      <a href="#">Explorez le calendrier des événements</a>
-    </div>
+      <figure>
+        <img src="assets/images/festival.webp"
+             alt="Foule assistant à un festival traditionnel écossais avec musiciens et danseurs">
+        <figcaption>Un festival traditionnel écossais avec musiciens et danseurs</figcaption>
+      </figure>
+      <div class="btn">
+        <a href="404.html" title="Calendrier des principaux événements culturels écossais">Explorez le
+          calendrier des événements</a>
+      </div>
+    </article>
 
-    <div>
+    <article class="culture-item">
+      <h3>Mystères et Légendes : Un Monde de Magie</h3>
+      <p>L'Écosse est riche en mythes et légendes transmis de génération en génération. Des créatures mythiques comme le
+        monstre du Loch Ness
+        aux récits de fées et de héros courageux, ces histoires captivantes font partie intégrante de l'imaginaire
+        écossais.
+        Laissez-vous envoûter par ces récits fascinants.</p>
+      <figure>
+        <img src="assets/images/monster.jpg" alt="Illustration artistique du monstre du Loch Ness émergeant des eaux">
+        <figcaption>Le légendaire monstre du Loch Ness</figcaption>
+      </figure>
+      <div class="btn">
+        <a href="404.html" title="Explorez les créatures mythiques et légendes de l'Écosse">Découvrez les
+          mythes et légendes écossais</a>
+      </div>
+    </article>
+  </section>
 
-    <h3>Mystères et Légendes : Un Monde de Magie</h3>
-    <p>L'Écosse est riche en mythes et légendes transmis de génération en génération. Des créatures mythiques comme le
-      monstre du Loch Ness
-      aux récits de fées et de héros courageux, ces histoires captivantes font partie intégrante de l'imaginaire
-      écossais.
-      Laissez-vous envoûter par ces récits fascinants.</p>
-      <img src="assets/images/monster.jpg" alt="monstre du loch ness" width="400">
-      <a href="#">Découvrez les mythes et légendes écossais</a>
-    </div>
-
-    <div>
-      <p>La culture écossaise est un mélange fascinant de traditions anciennes et d'influences modernes.
-        Nous vous invitons à explorer plus en profondeur cet héritage riche et à découvrir les nombreuses facettes de
-        l'âme écossaise.
-        Que votre voyage en Écosse soit réel ou virtuel, nous espérons que vous serez inspiré par sa beauté et son
-        unicité.</p>
-    </div>
+  <section id="conclusion">
+    <h2>L'Âme Écossaise</h2>
+    <p>La culture écossaise est un mélange fascinant de traditions anciennes et d'influences modernes.
+      Nous vous invitons à explorer plus en profondeur cet héritage riche et à découvrir les nombreuses facettes de
+      l'âme écossaise.
+      Que votre voyage en Écosse soit réel ou virtuel, nous espérons que vous serez inspiré par sa beauté et son
+      unicité.</p>
   </section>
 </main>
 
 <footer>
-  <div>
-    <img src="assets/images/logo_white.svg" alt="logo" height="48">
-    <span>Écosse</span>
+  <div class="logo">
+    <a href="index.html" aria-label="Haut de page">
+      <img src="assets/images/logo_white.svg" alt="logo du site Scotland">
+      <span>Scotland</span>
+    </a>
   </div>
-  <div>
-    <div>
-      <h3>Liens rapides</h3>
+  <!--  L'élément <footer> possède souvent différents liens, il n'a pour autant pas besoin d'être dans un élément <nav></nav>> cfr https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav -->
+  <div class="footer-container">
+    <div class="footer-menu">
+      <h4>Liens rapides</h4>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#">Accueil</a></li>
         <li><a href="decouverte.html">Découvrir</a></li>
         <li><a href="culture.html">Culture &amp; Traditions</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
 
-    <div>
-      <h3>Suivez-nous</h3>
+    <div class="footer-legal">
+      <h4>Mentions & Confidentialité</h4>
       <ul>
-        <li><a href="#" target="_blank">Facebook</a></li>
-        <li><a href="#" target="_blank">Instagram</a></li>
-        <li><a href="#" target="_blank">Twitter</a></li>
+        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="legales.html">Mentions légales</a></li>
       </ul>
+    </div>
+
+    <div class="footer-follow">
+      <h4>Suivez-nous</h4>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/visitscotland/" target="_blank">
+              <img src="assets/images/social_icons/instagram.png" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@visitscotland" target="_blank">
+              <img src="assets/images/social_icons/youtube.png" alt="Youtube">
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/VisitScotland" target="_blank">
+              <img src="assets/images/social_icons/twitter.png" alt="X ex-twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/visitscotland" target="_blank">
+              <img src="assets/images/social_icons/facebook.png" alt="facebook">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div>
-    <div>
-      <p>&copy; 2025 Visitez l'Écosse - Tous droits réservés</p>
-    </div>
+  <div class="copyright">
+    <p>&copy; 2025 Visitez l'Écosse</p>
+    <img src="assets/images/social_icons/vache.svg" alt="Easter egg">
+    <p>Tous droits réservés</p>
   </div>
 </footer>
 
