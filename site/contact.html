@@ -51,145 +51,159 @@
 
 <main>
   <section id="formulaire">
-    <h1>Une question sur l'Écosse ? Contactez-nous !</h1>
-    <p>
-      Vous planifiez un voyage en Écosse ou avez simplement des questions ? Remplissez le formulaire ci-dessous et notre
-      équipe vous répondra dans les meilleurs délais. Nous sommes là pour vous guider et vous faire découvrir les
-      merveilles écossaises !
-    </p>
+    <div class="container">
 
-    <form aria-label="Formulaire de contact">
-      <fieldset>
-        <legend>Formulaire de contact</legend>
+      <h1>Une question sur l'Écosse ?</h1>
+      <p>
+        Vous planifiez un voyage en Écosse ou avez simplement des questions ? Remplissez le formulaire ci-dessous et
+        notre
+        équipe vous répondra dans les meilleurs délais. Nous sommes là pour vous guider et vous faire découvrir les
+        merveilles écossaises !
+      </p>
 
-        <div>
-          <label for="name">Nom :</label>
-          <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
-        </div>
+      <form aria-label="Formulaire de contact">
+        <fieldset>
+          <legend>Formulaire de contact</legend>
 
-        <div>
-          <label for="surname">Prénom :</label>
-          <input type="text" id="surname" name="surname" placeholder="Entrez votre prénom" required>
-        </div>
-
-        <div>
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
-        </div>
-
-        <div>
-          <label for="phone">Téléphone :</label>
-          <input type="tel" id="phone" name="phone" placeholder="+32 81 69 69 69" required>
-        </div>
-
-        <div>
-          <label for="message">Message :</label>
-          <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
-        </div>
-
-        <div class="rgpd-notice">
-          <p>
-            <strong>Protection des données :</strong> Les informations recueillies via ce formulaire sont enregistrées
-            dans un fichier informatisé par Visitez l'Écosse pour répondre à vos demandes d'information. Elles sont
-            conservées pendant 2 ans et sont destinées uniquement à notre service client. Conformément au RGPD, vous
-            pouvez exercer votre droit d'accès, de rectification, d'effacement et de limitation du traitement en nous
-            contactant à <a href="mailto:privacy@visitez-ecosse.com">privacy@visitez-ecosse.com</a>.
-          </p>
-          <div class="consent-checkbox">
-            <input type="checkbox" id="data-consent" name="data-consent" required>
-            <label for="data-consent">
-              J'accepte que mes données soient traitées selon la <a href="confidentialite.html">politique de
-              confidentialité</a> du site.
-            </label>
+          <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
           </div>
-        </div>
 
-        <div>
-          <button type="submit">Envoyer</button>
-        </div>
+          <div>
+            <label for="surname">Prénom :</label>
+            <input type="text" id="surname" name="surname" placeholder="Entrez votre prénom" required>
+          </div>
 
-        <p>
-          Vous pouvez aussi nous écrire sur nos réseaux sociaux :
-          <a href="https://www.instagram.com/visitscotland/" target="_blank">Instagram</a>,
-          <a href="https://www.facebook.com/visitscotland" target="_blank">Facebook</a> ou
-          <a href="https://x.com/VisitScotland" target="_blank">X</a>.
-        </p>
-      </fieldset>
-    </form>
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+          </div>
+
+          <div>
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" placeholder="+32 81 69 69 69" required>
+          </div>
+
+          <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."
+                      required></textarea>
+          </div>
+
+          <div class="rgpd-notice">
+            <details aria-labelledby="rgpd-notice" class="rgpd-notice">
+              <summary><strong>Protection des données :</strong> </summary>
+              <p>
+                Les informations recueillies via ce formulaire sont enregistrées
+                dans un fichier informatisé par Visitez l'Écosse pour répondre à vos demandes d'information. Elles sont
+                conservées pendant 2 ans et sont destinées uniquement à notre service client. Conformément au RGPD, vous
+                pouvez exercer votre droit d'accès, de rectification, d'effacement et de limitation du traitement en nous
+                contactant à <a href="mailto:privacy@visitez-ecosse.com">privacy@visitez-ecosse.com</a>.
+              </p>
+            </details>
+
+            <div class="consent-checkbox">
+              <input type="checkbox" id="data-consent" name="data-consent" required>
+              <label for="data-consent">
+                J'accepte que mes données soient traitées selon la <a href="confidentialite.html">politique de
+                confidentialité</a> du site.
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" class="btn">Envoyer</button>
+          </div>
+
+          <p>
+            Vous pouvez aussi nous écrire sur nos réseaux sociaux :
+            <a href="https://www.instagram.com/visitscotland/" target="_blank">Instagram</a>,
+            <a href="https://www.facebook.com/visitscotland" target="_blank">Facebook</a> ou
+            <a href="https://x.com/VisitScotland" target="_blank">X</a>.
+          </p>
+        </fieldset>
+      </form>
+    </div>
   </section>
 
   <section id="coordonnees" aria-labelledby="coordonnees">
-    <h2>Nos coordonnées</h2>
+    <div class="container">
+      <h2>Nos coordonnées</h2>
 
-    <div class="info">
-      <p>Vous pouvez également nous contacter via les informations suivantes :</p>
-      <ul>
-        <li><strong>Email :</strong> <a href="mailto:contact@visitez-ecosse.com">contact@visitez-ecosse.com</a></li>
-        <li><strong>Téléphone :</strong> <a href="tel:+3281696969">+32 81 69 69 69</a></li>
-        <li><strong>Horaires :</strong> Lundi à vendredi de 9h à 18h (CET)</li>
-      </ul>
-    </div>
+      <div class="info">
+        <p>Vous pouvez également nous contacter via les informations suivantes :</p>
+        <ul>
+          <li><strong>Email :</strong> <a href="mailto:contact@visitez-ecosse.com">contact@visitez-ecosse.com</a></li>
+          <li><strong>Téléphone :</strong> <a href="tel:+3281696969">+32 81 69 69 69</a></li>
+          <li><strong>Horaires :</strong> Lundi à vendredi de 9h à 18h (CET)</li>
+        </ul>
+      </div>
 
-    <div class="responsive-map" aria-labelledby="map">
-      <iframe title="Carte de la localisation en Écosse"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1853247.2762502223!2d-6.227292556103479!3d56.4906712365694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4886c691c5b4fba9%3A0x93cfb91e14e4b615!2sScotland!5e0!3m2!1sen!2sfr!4v1618359872683!5m2!1sen!2sfr"
-              width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <div class="responsive-map" aria-labelledby="map">
+        <iframe title="Carte de la localisation en Écosse"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1853247.2762502223!2d-6.227292556103479!3d56.4906712365694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4886c691c5b4fba9%3A0x93cfb91e14e4b615!2sScotland!5e0!3m2!1sen!2sfr!4v1618359872683!5m2!1sen!2sfr"
+                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </div>
   </section>
 
   <section id="faq" aria-labelledby="faq-heading">
-    <h2 id="faq-heading">Questions fréquentes</h2>
+    <div class="container">
+      <h2 id="faq-heading">Questions fréquentes</h2>
 
-    <details aria-labelledby="faq1-title">
-      <summary id="faq1-title">Faut-il un visa pour visiter l'Écosse ?</summary>
-      <p>Pour les citoyens européens, un passeport est suffisant pour un séjour touristique de moins de 6 mois.</p>
-    </details>
+      <details aria-labelledby="faq1-title">
+        <summary id="faq1-title">Faut-il un visa pour visiter l'Écosse ?</summary>
+        <p>Pour les citoyens européens, un passeport est suffisant pour un séjour touristique de moins de 6 mois.</p>
+      </details>
 
-    <details aria-labelledby="faq2-title">
-      <summary id="faq2-title">Quelle est la meilleure période pour voyager ?</summary>
-      <p>Les mois de mai à septembre sont idéaux pour profiter du climat doux et des paysages verdoyants.</p>
-    </details>
+      <details aria-labelledby="faq2-title">
+        <summary id="faq2-title">Quelle est la meilleure période pour voyager ?</summary>
+        <p>Les mois de mai à septembre sont idéaux pour profiter du climat doux et des paysages verdoyants.</p>
+      </details>
 
-    <details aria-labelledby="faq3-title">
-      <summary id="faq3-title">Quels sont les moyens de transport disponibles en Écosse ?</summary>
-      <p>Train, bus, voiture de location, ferry et même des vols internes entre certaines îles.</p>
-    </details>
+      <details aria-labelledby="faq3-title">
+        <summary id="faq3-title">Quels sont les moyens de transport disponibles en Écosse ?</summary>
+        <p>Train, bus, voiture de location, ferry et même des vols internes entre certaines îles.</p>
+      </details>
 
-    <details aria-labelledby="faq4-title">
-      <summary id="faq4-title">Quelle monnaie est utilisée en Écosse ?</summary>
-      <p>L'Écosse utilise la livre sterling (£)...</p>
-    </details>
+      <details aria-labelledby="faq4-title">
+        <summary id="faq4-title">Quelle monnaie est utilisée en Écosse ?</summary>
+        <p>L'Écosse utilise la livre sterling (£)...</p>
+      </details>
 
-    <details aria-labelledby="faq5-title">
-      <summary id="faq5-title">Faut-il parler gaélique pour visiter l'Écosse ?</summary>
-      <p>Non, l'anglais est parlé partout en Écosse...</p>
-    </details>
+      <details aria-labelledby="faq5-title">
+        <summary id="faq5-title">Faut-il parler gaélique pour visiter l'Écosse ?</summary>
+        <p>Non, l'anglais est parlé partout en Écosse...</p>
+      </details>
 
-    <details aria-labelledby="faq6-title">
-      <summary id="faq6-title">Comment se déplacer à Édimbourg et Glasgow ?</summary>
-      <p>Les deux villes disposent d'excellents réseaux de transports publics...</p>
-    </details>
+      <details aria-labelledby="faq6-title">
+        <summary id="faq6-title">Comment se déplacer à Édimbourg et Glasgow ?</summary>
+        <p>Les deux villes disposent d'excellents réseaux de transports publics...</p>
+      </details>
 
-    <details aria-labelledby="faq7-title">
-      <summary id="faq7-title">Peut-on observer des aurores boréales en Écosse ?</summary>
-      <p>Oui, les aurores boréales peuvent être observées dans le nord de l'Écosse...</p>
-    </details>
+      <details aria-labelledby="faq7-title">
+        <summary id="faq7-title">Peut-on observer des aurores boréales en Écosse ?</summary>
+        <p>Oui, les aurores boréales peuvent être observées dans le nord de l'Écosse...</p>
+      </details>
 
-    <details aria-labelledby="faq8-title">
-      <summary id="faq8-title">Que faut-il prévoir comme vêtements ?</summary>
-      <p>Prévoyez des vêtements imperméables et des couches superposables...</p>
-    </details>
+      <details aria-labelledby="faq8-title">
+        <summary id="faq8-title">Que faut-il prévoir comme vêtements ?</summary>
+        <p>Prévoyez des vêtements imperméables et des couches superposables...</p>
+      </details>
 
-    <details aria-labelledby="faq9-title">
-      <summary id="faq9-title">Les circuits de whisky sont-ils adaptés aux enfants ?</summary>
-      <p>La plupart des distilleries accueillent les enfants et proposent souvent des jus de fruits...</p>
-    </details>
+      <details aria-labelledby="faq9-title">
+        <summary id="faq9-title">Les circuits de whisky sont-ils adaptés aux enfants ?</summary>
+        <p>La plupart des distilleries accueillent les enfants et proposent souvent des jus de fruits...</p>
+      </details>
 
-    <details aria-labelledby="faq10-title">
-      <summary id="faq10-title">Peut-on camper librement en Écosse ?</summary>
-      <p>L'Écosse permet le "wild camping" responsable dans la plupart des zones non clôturées...</p>
-    </details>
+      <details aria-labelledby="faq10-title">
+        <summary id="faq10-title">Peut-on camper librement en Écosse ?</summary>
+        <p>L'Écosse permet le "wild camping" responsable dans la plupart des zones non clôturées...</p>
+      </details>
+    </div>
   </section>
 
 </main>
