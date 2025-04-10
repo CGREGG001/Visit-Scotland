@@ -1,0 +1,154 @@
+@import url(base.css);
+
+main {
+
+    #video-promotionnelle, #meilleurs-endroits {
+        background-color: var(--section-bg-color);
+    }
+
+    #introduction, #video-promotionnelle, #activites-populaires, #meilleurs-endroits {
+
+        h1 {
+            text-align: center;
+            color: var(--title-color);
+            margin: 3rem 0 2rem;
+        }
+
+        h2 {
+            padding-bottom: 3rem;
+            color: var(--title-color);
+        }
+
+        p {
+            padding-top: 1rem;
+        }
+
+        .introduction-container, .video-promotionnelle-container, .activites-populaires-container, .table-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .introduction-item, .video-promotionnelle-item {
+                max-width: 1200px;
+                padding: 0 3rem;
+            }
+
+            .video-wrapper {
+                position: relative;
+                width: 95%;
+                margin-top: 3rem;
+                padding-bottom: 56.25%; /* 16:9 */
+                height: 0;
+
+                iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    border: none;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        .activites-populaires-container {
+            max-width: 1600px;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+
+            .activites-card {
+                background-color: var(--section-bg-color);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+                width: 100%;
+                max-width: 420px;
+                height: 420px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                transition: transform 0.3s ease-in-out;
+                border-radius: 6px 6px 0 0;
+
+                &:hover {
+                    transform: scale(1.05);
+                    cursor: pointer;
+                }
+
+                img {
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    margin: 1rem 0 0.5rem;
+                    color: var(--title-color);
+                }
+
+                p {
+                    padding: 0 1.2rem 1.5rem;
+                    text-align: center;
+                    font-size: 1rem;
+                    color: var(--text-color);
+                }
+            }
+        }
+    }
+
+    #meilleurs-endroits {
+        max-width: 100%;
+        margin-top: 3rem;
+        padding: 0 1.5rem;
+
+        h2 {
+            margin-top: 3rem;
+        }
+
+        .table-container {
+
+            table {
+                width: 95%;
+                background-color: var(--main-bg-color);
+                border-collapse: separate;
+                border-spacing: 0;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+                border-radius: 6px 6px 0 0;
+                overflow: hidden;
+                margin-bottom: 5rem;
+                tr {
+                    text-align: left;
+
+                    td {
+                        padding: 1rem 1.2rem;
+                        vertical-align: top;
+                        line-height: 1.6;
+
+
+                        a {
+                            color: var(--text-footer-hover-color);
+                            text-decoration: none;
+                            position: relative;
+                            transition: all 0.3s ease;
+
+                            &:hover {
+                                color: #2980b9;
+                            }
+                        }
+                    }
+
+                    th {
+                        padding: .6rem 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
