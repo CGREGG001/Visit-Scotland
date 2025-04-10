@@ -1,5 +1,7 @@
 @import url("variables.css");
 @import url("base.css");
+@import url("decouverte.css");
+@import url("contact.css");
 @import url("media-queries.css");
 
 /* reset de base */
