@@ -12,6 +12,10 @@
     --text-footer-hover-color: #9ba89b;
     --btn-bg-color: #6f786f;
     --btn-bg-hover-color: #859085;
+
+    --accent: #859085;
+    --accent-dark: #6f786f;
+    --error: #2c302c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,5 +32,10 @@
         --text-footer-color: #f5f7f5;
         --btn-bg-color: #596059;
         --btn-bg-hover-color: #2c302c;
+
+        --accent: #2c302c;
+        --accent-dark: #6f786f;
+        --accent-light: #2c302c;
+        --error: #9ba89b;
     }
 }

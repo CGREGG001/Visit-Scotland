@@ -92,11 +92,12 @@
             }
         }
 
-        #activites-populaires{
-            h2{
+        #activites-populaires {
+            h2 {
                 padding-top: 3rem;
             }
         }
+
         #meilleurs-endroits {
 
             padding: 0;
@@ -341,8 +342,8 @@
             }
         }
 
-        #activites-populaires{
-            h2{
+        #activites-populaires {
+            h2 {
                 padding: 3rem 0 2rem;
             }
         }
@@ -358,6 +359,27 @@
 
                     td, th {
                         padding: 1rem 0.8rem;
+                    }
+                }
+            }
+        }
+
+        #piliers-culture {
+            h2{
+                font-size: 1.3rem;
+            }
+            h3{
+                font-size: 1rem;
+            }
+            .culture-item {
+                padding-top: 0;
+
+
+                figure {
+                    width: 100%;
+
+                    figcaption {
+                        align-self: start;
                     }
                 }
             }

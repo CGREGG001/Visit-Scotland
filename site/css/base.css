@@ -41,6 +41,7 @@ html, body {
     background-color: var(--btn-bg-color);
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 
     a {
         text-decoration: none;
