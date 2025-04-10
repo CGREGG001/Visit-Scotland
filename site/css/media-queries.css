@@ -3,6 +3,10 @@
 
     main {
 
+        section {
+            text-align: center;
+        }
+
         #bg-video {
             width: 100%;
 
@@ -33,6 +37,9 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
     main {
+        section {
+            text-align: center;
+        }
 
         #bg-video {
             width: 100%;
@@ -84,16 +91,36 @@
                 padding-top: 1rem;
             }
         }
+
+        #activites-populaires{
+            h2{
+                padding-top: 3rem;
+            }
+        }
+        #meilleurs-endroits {
+
+            padding: 0;
+
+            .table-container {
+                table {
+                    width: 100%;
+
+                    td, th {
+                        padding: 1rem 0.8rem;
+                    }
+                }
+            }
+        }
     }
 }
 
 /* SMARTPHONES */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     header {
         position: sticky;
         top: 0;
-        background-color: var(--header-bg-color);
+        background-color: var(--header-bg-color-full);
         backdrop-filter: none;
         height: auto;
 
@@ -112,6 +139,19 @@
 
             img {
                 height: 2rem;
+            }
+        }
+
+        .vache {
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+            height: 60%;
+
+            img {
+                width: 80%;
+                opacity: 30%;
+
             }
         }
 
@@ -202,6 +242,8 @@
 
         section {
 
+            text-align: start;
+
             h1 {
                 font-size: 1.5rem;
             }
@@ -212,6 +254,11 @@
 
             h3 {
                 font-size: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
             }
         }
 
@@ -227,7 +274,7 @@
 
         #welcome {
             width: 100%;
-            text-align: center;
+            text-align: start;
             border-radius: 0;
             transform: translate(0, 0);
         }
@@ -240,20 +287,17 @@
 
         #decouverte, #culture {
 
-            h2 {
+            h2, h3 {
                 padding-bottom: 0;
             }
 
-            h3 {
-                padding-bottom: 0;
-            }
         }
 
         #decouverte, #culture, #contact, #newsletter {
-            .decouverte-container, .culture-container, .contact-container, .newsletter-container {
+            .decouverte-container, .culture-container, .contact-container, .newsletter-container, .introduction-container {
                 width: 90%;
 
-                .decouverte-item, .culture-item, .contact-item, .newsletter-item {
+                .decouverte-item, .culture-item, .contact-item, .newsletter-item, .introduction-item {
                     min-width: 100%;
                 }
 
@@ -269,6 +313,54 @@
                     display: none;
                 }
             }
+
+        }
+
+        /*page découverte*/
+
+        #introduction {
+            h1 {
+                margin-top: 0;
+            }
+        }
+
+        #video-promotionnelle {
+            padding-bottom: 0;
+            width: 100%;
+
+            .video-promotionnelle-container {
+
+                .video-wrapper {
+                    width: 100%;
+
+                    iframe {
+                        border-radius: 0;
+                        margin-top: 3rem;
+                    }
+                }
+            }
+        }
+
+        #activites-populaires{
+            h2{
+                padding: 3rem 0 2rem;
+            }
+        }
+
+        #meilleurs-endroits {
+            display: none;
+            padding: 0;
+
+            .table-container {
+                width: 100%;
+
+                table {
+
+                    td, th {
+                        padding: 1rem 0.8rem;
+                    }
+                }
+            }
         }
     }
 
@@ -279,21 +371,23 @@
         .footer-container {
             flex-direction: column;
             align-items: center;
-            padding: 1rem;
+            /*padding: 1rem;*/
 
-            .footer-menu, .footer-follow {
+            .footer-menu, .footer-legal, .footer-follow {
                 width: 100%;
                 text-align: center;
 
-                .social{
-                    ul{
+                .social {
+                    ul {
                         display: flex;
                         justify-content: center;
                         padding: 0;
                         gap: 1rem;
-                        li{
+
+                        li {
                             padding: 0;
-                            img{
+
+                            img {
                                 height: 1.4rem;
                             }
                         }
@@ -308,3 +402,4 @@
         }
     }
 }
+
