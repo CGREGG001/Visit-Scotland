@@ -1,14 +1,5 @@
 main {
 
-
-    #introduction, #piliers-culture, #conclusion {
-        h3 {
-            font-size: 1.8rem;
-            padding: 2rem 0;
-            text-align: center;
-        }
-    }
-
     #introduction {
         max-width: 1200px;
 
@@ -43,7 +34,6 @@ main {
                 justify-content: center;
                 align-items: center;
                 border: 1px solid var(--btn-bg-color);
-                /*background-color: var(--main-bg-color);*/
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
                 border-radius: 6px 6px 0 0;
 
@@ -67,7 +57,6 @@ main {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                /* Style pour le conteneur figure */
 
                 figure {
                     margin: 20px 0;
@@ -79,8 +68,6 @@ main {
                     figcaption {
                         color: var(--text-color);
                     }
-
-                    /* Style de base pour l'élément audio */
 
                     audio {
                         width: 100%; /* Largeur complète du conteneur */
@@ -109,6 +96,4 @@ main {
         max-width: 1200px;
         padding: 2rem;
     }
-
-
 }

@@ -1,18 +1,27 @@
 :root {
+    /*header*/
+    --logo-height: 40px;
     --header-height: 60px;
     --header-bg-color: rgba(111, 120, 111, 0.7);
     --header-bg-color-full: #6F786FFF;
+
+    /*main*/
     --text-menu-color: #e2e7e2;
     --main-bg-color: rgba(178, 193, 178, 0.4);
     --text-color: #424842;
     --title-color: #2c302c;
     --section-bg-color: #F9F9F6;
+
+    /*footer*/
     --footer-bg-color: #596059;
     --text-footer-color: #F9F9F6;
     --text-footer-hover-color: #9ba89b;
+
+    /*bouton*/
     --btn-bg-color: #6f786f;
     --btn-bg-hover-color: #859085;
 
+    /*404*/
     --accent: #859085;
     --accent-dark: #6f786f;
     --error: #2c302c;
@@ -37,5 +46,11 @@
         --accent-dark: #6f786f;
         --accent-light: #2c302c;
         --error: #9ba89b;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --logo-height: 30px;
     }
 }

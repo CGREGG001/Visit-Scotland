@@ -1,8 +1,10 @@
 @import url("variables.css");
+@import url("header.css");
+@import url("footer.css");
 @import url("base.css");
 @import url("decouverte.css");
-@import url("contact.css");
 @import url("culture.css");
+@import url("contact.css");
 @import url("404.css");
 @import url("media-queries.css");
 
@@ -11,4 +13,38 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html, body {
+    background-color: var(--main-bg-color);
+    font-family: "Roboto Thin", sans-serif;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+
+    h1 {
+        color: var(--title-color);
+        font-size: clamp(2rem, 6vw, 3rem); /* min 32px, max 48px */
+        line-height: 1.2;
+    }
+
+    h2 {
+        color: var(--title-color);
+        text-align: center;
+        font-size: clamp(1.5rem, 4vw, 2.25rem); /* 24px → 36px */
+        line-height: 1.3;
+    }
+
+    h3 {
+        padding-bottom: 2rem;
+        color: var(--title-color);
+        text-align: center;
+        font-size: clamp(1.25rem, 3vw, 1.75rem); /* 20px → 28px */
+        line-height: 1.4;
+    }
+
+    p {
+        font-size: clamp(1rem, 2vw, 1.125rem); /* 16px → 18px */
+        line-height: 1.6;
+    }
+
 }
