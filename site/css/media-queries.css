@@ -4,7 +4,7 @@
     main {
 
         section {
-            text-align: center;
+
         }
 
         #bg-video {
@@ -19,7 +19,6 @@
 
         #welcome {
             width: 100%;
-            text-align: center;
             border-radius: 0;
             transform: translate(0, 0);
         }
@@ -37,9 +36,6 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
     main {
-        section {
-            text-align: center;
-        }
 
         #bg-video {
             width: 100%;
@@ -84,6 +80,10 @@
             h2 {
                 padding-top: 5rem;
             }
+        }
+
+        #culture .culture-container {
+            flex-direction: column-reverse;
         }
 
         #culture, #contact {
@@ -317,6 +317,11 @@
 
         }
 
+        #culture .culture-container {
+            flex-direction: column-reverse;
+        }
+
+
         /*page découverte*/
 
         #introduction {
@@ -365,12 +370,14 @@
         }
 
         #piliers-culture {
-            h2{
+            h2 {
                 font-size: 1.3rem;
             }
-            h3{
+
+            h3 {
                 font-size: 1rem;
             }
+
             .culture-item {
                 padding-top: 0;
 

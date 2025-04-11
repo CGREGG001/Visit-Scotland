@@ -35,11 +35,12 @@ main {
     align-items: center;
 
     section {
-
         width: 100%;
         padding: 4rem 0;
 
-
+        /*&:last-child{*/
+        /*    margin-bottom: 3rem;*/
+        /*}*/
     }
 
     #bg-video {
@@ -61,7 +62,7 @@ main {
 
     #welcome {
         max-width: 1400px;
-        background-color: var(--section-bg-color);
+        background-color: #F4F4F4;
         padding: 4rem 3rem;
         text-align: justify;
         border-radius: 6px;
@@ -96,7 +97,9 @@ main {
     }
 
     #culture, #newsletter {
+        max-width: 1400px;
         background-color: var(--section-bg-color);
+        border-radius: var(--border-radius);
     }
 
     #culture, #contact, #newsletter {
@@ -129,7 +132,8 @@ main {
             }
 
             .decouverte-img, .culture-img, .newsletter-img {
-                width: 500px;
+                width: 360px;
+                padding: 1rem;
 
                 img {
                     width: 100%;
