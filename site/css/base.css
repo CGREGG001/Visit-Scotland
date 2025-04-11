@@ -62,7 +62,7 @@ main {
 
     #welcome {
         max-width: 1400px;
-        background-color: #F4F4F4;
+        background-color: var(--section-welcome);
         padding: 4rem 3rem;
         text-align: justify;
         border-radius: 6px;
@@ -75,6 +75,7 @@ main {
         .welcome-title {
             h1 {
                 text-transform: uppercase;
+                font-weight: bold;
             }
         }
 

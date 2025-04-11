@@ -2,15 +2,16 @@
     /*header*/
     --logo-height: 40px;
     --header-height: 60px;
-    --header-bg-color: rgba(77, 84, 77, 0.7);
+    --header-bg-color: rgba(77, 84, 77, 0.6);
     --header-bg-color-full: #4d544d;
     --text-menu-color: #F9F9F6;
 
     /*main*/
-    --main-bg-color: #ebedeb;
+    --section-bg-color: #ebedeb;
     --text-color: #2e322e;
     --title-color: #333;
-    --section-bg-color: #d7dcd7;
+    --main-bg-color: #d7dcd7;
+    --section-welcome: #F4F4F4;
     --border-radius: 8px;
 
     /*footer*/
@@ -37,6 +38,7 @@
         --text-color: #EAEDE7;
         --title-color: #e2e7e2;
         --section-bg-color: #6f786f;
+        --section-welcome: #6f786f;
         --footer-bg-color: #2c302c;
         --text-footer-hover-color: #9ba89b;
         --text-footer-color: #f5f7f5;
