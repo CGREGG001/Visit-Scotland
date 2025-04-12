@@ -37,10 +37,6 @@ main {
     section {
         width: 100%;
         padding: 4rem 0;
-
-        /*&:last-child{*/
-        /*    margin-bottom: 3rem;*/
-        /*}*/
     }
 
     #bg-video {
@@ -98,9 +94,8 @@ main {
     }
 
     #culture, #newsletter {
-        max-width: 1400px;
         background-color: var(--section-bg-color);
-        border-radius: var(--border-radius);
+
     }
 
     #culture, #contact, #newsletter {

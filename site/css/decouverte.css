@@ -1,7 +1,6 @@
 main {
 
     #video-promotionnelle, #meilleurs-endroits {
-        max-width: 1400px;
         background-color: var(--section-bg-color);
     }
 

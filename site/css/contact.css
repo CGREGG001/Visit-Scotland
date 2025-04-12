@@ -1,10 +1,8 @@
-
 /* Style du formulaire */
 form {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 2rem auto;
     font-family: 'Open Sans', Arial, sans-serif;
-    color: var(--dark-color);
 }
 
 fieldset {
@@ -13,7 +11,6 @@ fieldset {
     margin: 0;
     background-color: var(--section-bg-color);
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
     padding: 2rem 1rem;
 }
 
@@ -23,6 +20,7 @@ legend {
     color: var(--text-color);
     border-bottom: 2px solid var(--text-color);
     width: 100%;
+    padding-top: 4rem;
 }
 
 /* Style des groupes de champs */
@@ -33,9 +31,8 @@ form div {
 /* Style des labels */
 label {
     display: block;
-    /*margin-bottom: 0.5rem;*/
+    margin-bottom: 0.5rem;
     font-weight: 500;
-    color: var(--dark-color);
 }
 
 /* Style des inputs */
@@ -44,11 +41,11 @@ input[type="email"],
 input[type="tel"],
 textarea {
     width: 100%;
+    resize: none;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: var(--border-radius);
     font-size: 1rem;
-    transition: var(--transition);
 }
 
 input[type="text"]:focus,
@@ -57,7 +54,7 @@ input[type="tel"]:focus,
 textarea:focus {
     outline: none;
     border-color: var(--text-color);
-    box-shadow: 0 0 0 3px rgba(0,0,0 , 0.2);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 input::placeholder,
@@ -68,11 +65,19 @@ textarea::placeholder {
 /* Style de la zone RGPD */
 .rgpd-notice {
     width: 100%;
+    max-width: 600px; /* ou une largeur fixe selon ton design */
     background-color: var(--text-footer-color);
     padding: 1rem;
     border-radius: var(--border-radius);
     margin-bottom: 1.5rem;
-    overflow: hidden;
+}
+
+/* Style du résumé (titre cliquable) */
+.rgpd-notice details summary {
+    cursor: pointer;
+    color: #424842;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
 details summary {
@@ -103,6 +108,7 @@ details p {
 }
 
 .consent-checkbox label {
+    color: #424842;
     font-size: 0.9rem;
     margin-bottom: 0;
 }
@@ -127,7 +133,7 @@ form p:last-child {
     color: #666;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 
@@ -143,16 +149,18 @@ form p:last-child {
 
 #coordonnees {
     background-color: var(--section-bg-color);
+    max-width: 1400px;
+    border-radius: var(--border-radius);
 
-    .container{
+    .container {
         gap: 2rem;
 
-        p{
+        p {
             padding-bottom: 1rem;
         }
 
-        .info{
-            li{
+        .info {
+            li {
                 list-style: none;
             }
         }
@@ -161,12 +169,12 @@ form p:last-child {
 
 #faq {
 
-    h2{
+    h2 {
         padding-bottom: 2rem;
 
     }
 
-    details{
+    details {
         text-align: center;
         padding: .5rem;
     }
@@ -176,8 +184,10 @@ form p:last-child {
 
 /* Responsive */
 @media (max-width: 768px) {
+
     fieldset {
         padding: 1.5rem;
+        margin-bottom: 4rem;
     }
 
     input[type="text"],
@@ -190,4 +200,17 @@ form p:last-child {
     .btn {
         width: 100%;
     }
+
+    .responsive-map {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        iframe {
+            width: 90%;
+        }
+    }
+
 }
