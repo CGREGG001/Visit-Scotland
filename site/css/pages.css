@@ -1,0 +1,137 @@
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: .75rem 1rem;
+    border: 1px solid red;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+    a {
+        text-decoration: none;
+        color: var(--text-menu-color);
+    }
+
+    &:hover {
+        background-color: var(--btn-bg-hover-color);
+    }
+}
+
+.burger {
+    display: none;
+}
+
+.vache {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        width: 100%;
+        padding: var(--spacing-lg) 0;
+    }
+
+    #bg-video {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+
+        .video-container {
+            video {
+                width: 100vw;
+                height: 80vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    #welcome {
+        max-width: 1340px;
+        background-color: var(--color-bg-welcome);
+        padding: 4rem;
+        text-align: justify;
+        z-index: 1;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+
+        .welcome-title {
+            h1 {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+
+        .welcome-text {
+            p {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    #decouverte, #culture {
+
+        h2 {
+            padding-bottom: 3rem;
+        }
+
+        h3 {
+            padding-bottom: 3rem;
+        }
+    }
+
+    #culture, #newsletter {
+        background-color: var(--color-bg-section);
+
+    }
+
+    #culture, #contact, #newsletter {
+        padding: 4rem 0;
+    }
+
+    #decouverte, #culture, #contact, #newsletter {
+        width: 100%;
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        .decouverte-container, .culture-container, .contact-container, .newsletter-container {
+            max-width: 1400px;
+            margin: 2rem auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+
+            .decouverte-item, .culture-item, .contact-item, .newsletter-item {
+                max-width: 60%;
+                padding: 0 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .decouverte-img, .culture-img, .newsletter-img {
+                width: 360px;
+                padding: 1rem;
+
+                img {
+                    width: 100%;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}
