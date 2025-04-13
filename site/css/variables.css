@@ -1,35 +1,62 @@
 :root {
+    /* Layout */
+    --border-radius: 8px;
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0 4px 8px rgba(0, 0, 0, 0.2);
+
     /*header*/
     --logo-height: 40px;
     --header-height: 60px;
-    --header-bg-color: rgba(136, 57, 239, 0.7);
-    --header-bg-color-full: rgba(136, 57, 239);
-    --text-menu-color: #F9F9F6;
+    --header-bg-color: rgba(91, 36, 135, 0.7);
+    --header-bg-color-full: #8356be;
+    --text-menu-color: #F4F4F4;
 
-    /*main*/
-    --section-bg-color: #e6e9ef;
-    --title-color: #4c4f69;
-    --text-color: #6c6f85;
-    --main-bg-color: #ccd0da;
-    --section-welcome: #F4F4F4;
-    --border-radius: 8px;
+    /* Typography */
+    --color-text-primary: rgb(73, 60, 86);
+    --color-heading: rgb(32, 15, 46);
+
+    /* Backgrounds */
+    --color-bg-main: rgb(242,242,248);
+    --color-bg-section: #ffffff;
+    --color-bg-welcome: #ffffff;
+
+    /*global*/
+    --font-family-main: "Arimo", sans-serif;
+    --font-family-secondary: "Montserrat", sans-serif;
 
     /*footer*/
-    --footer-bg-color: #5c5f77;
-    --text-footer-color: #F9F9F6;
-    --text-footer-hover-color: #9ba89b;
+    --footer-bg-color: rgb(32,15,46);
+    --text-footer-color: #F4F4F4;
+    --text-footer-hover-color: #BF9BFA;
 
     /*bouton*/
-    --btn-bg-color: #8839ef;
-    --btn-bg-hover-color: #7d21ea;
+    --btn-bg-color: #17359CFF;
+    --btn-bg-hover-color: #1C42C1FF;
 
     /*404*/
-    --accent: #859085;
-    --accent-dark: #6f786f;
-    --error: #2c302c;
+    --accent: #C090EC;
+    --error: #7821EA;
+
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Arimo', sans-serif;
+
+    /* Tailles de police */
+    --font-size-xs: 0.75rem;       /* 12px */
+    --font-size-sm: 0.875rem;      /* 14px */
+    --font-size-md: 1rem;          /* 16px */
+    --font-size-lg: 1.25rem;       /* 20px */
+    --font-size-xl: 2rem;          /* 32px */
+    --font-size-xxl: 3rem;         /* 48px */
+
+    /* Espacements (utilitaires) */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* dark mode & high contrast mode */
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
     :root {
         --header-bg-color: rgba(28, 28, 28, 0.7);
         --header-bg-color-full: #596059;
