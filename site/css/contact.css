@@ -150,7 +150,6 @@ form p:last-child {
 #coordonnees {
     background-color: var(--section-bg-color);
     max-width: 1400px;
-    border-radius: var(--border-radius);
 
     .container {
         gap: 2rem;

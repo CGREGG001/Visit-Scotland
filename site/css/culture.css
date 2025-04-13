@@ -15,8 +15,7 @@ main {
 
         .culture-item {
             max-width: 1200px;
-            margin: 0 auto;
-            margin-bottom: 3rem;
+            margin: 0 auto 3rem;
             padding: 2rem;
             display: flex;
             flex-direction: column;
@@ -42,22 +41,18 @@ main {
                 width: 70%;
                 margin-top: 2rem;
                 padding: .5rem;
-                background-color: var(--section-bg-color);
+                background-color: #F4F4F4;
 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border: 1px solid var(--btn-bg-color);
-                box-shadow: 0 4px 15px rgba(15, 15, 15, 0.4);
-                border-radius: 6px;
+                box-shadow: 0 4px 15px rgba(15, 15, 15, 0.2);
 
                 img {
                     width: 100%;
                     display: block;
                     object-fit: cover;
-
-                    border-radius: 6px 6px 0 0;
                 }
 
                 figcaption {

@@ -1,17 +1,13 @@
 :root {
     --btn-primary: #9ba89b;
     --btn-primary-hover: #8D998D;
-
     --btn-secondary: #5E7668;
     --btn-secondary-hover: #8D998D;
-
     --btn-text-light: #F4F4F4;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: var(--main-bg-color);
-
+    background-color: mediumvioletred;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

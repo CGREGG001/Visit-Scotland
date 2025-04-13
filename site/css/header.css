@@ -38,7 +38,7 @@ header {
                     padding: 4px 10px;
 
                     &:hover {
-                        border-bottom: 2px solid var(--text-menu-color-hover);
+                        text-decoration: underline;
                     }
                 }
             }

@@ -2,26 +2,26 @@
     /*header*/
     --logo-height: 40px;
     --header-height: 60px;
-    --header-bg-color: rgba(77, 84, 77, 0.6);
-    --header-bg-color-full: #4d544d;
+    --header-bg-color: rgba(136, 57, 239, 0.7);
+    --header-bg-color-full: rgba(136, 57, 239);
     --text-menu-color: #F9F9F6;
 
     /*main*/
-    --section-bg-color: #ebedeb;
-    --text-color: #2e322e;
-    --title-color: #333;
-    --main-bg-color: #d7dcd7;
+    --section-bg-color: #e6e9ef;
+    --title-color: #4c4f69;
+    --text-color: #6c6f85;
+    --main-bg-color: #ccd0da;
     --section-welcome: #F4F4F4;
     --border-radius: 8px;
 
     /*footer*/
-    --footer-bg-color: #2e322e;
+    --footer-bg-color: #5c5f77;
     --text-footer-color: #F9F9F6;
     --text-footer-hover-color: #9ba89b;
 
     /*bouton*/
-    --btn-bg-color: #9ba89b;
-    --btn-bg-hover-color: #7c867c;
+    --btn-bg-color: #8839ef;
+    --btn-bg-hover-color: #7d21ea;
 
     /*404*/
     --accent: #859085;
