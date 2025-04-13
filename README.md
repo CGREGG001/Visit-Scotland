@@ -111,12 +111,12 @@ No action is required from the user — it works seamlessly.
 
 
 ### Light Mode
-![Light Mode](docs/images/lightMode.png)
+![Light Mode](docs/screenshots/lightMode.png)
 
 ---
 
 ### Dark Mode
-![Dark Mode](docs/images/darkMode.png)
+![Dark Mode](docs/screenshots/darkMode.png)
 
 ---
 
@@ -128,7 +128,7 @@ Below are previews on various devices.
 
 ### Desktop
 
-![Desktop view](docs/images/responsiveDesktop.png)
+![Desktop view](docs/screenshots/responsiveDesktop.png)
 
 ---
 
@@ -136,11 +136,11 @@ Below are previews on various devices.
 
 **iPad Pro**
 
-![iPad Pro view](docs/images/responsiveIpadPro.png)
+![iPad Pro view](docs/screenshots/responsiveIpadPro.png)
 
 **iPad Mini**
 
-![iPad Mini view](docs/images/ResponsiveIpadMini.png)
+![iPad Mini view](docs/screenshots/ResponsiveIpadMini.png)
 
 ---
 
@@ -148,8 +148,8 @@ Below are previews on various devices.
 
 **iPhone 12 Pro**
 
-![iPhone 12 Pro view](docs/images/ResponsiveIphone12.png)
+![iPhone 12 Pro view](docs/screenshots/ResponsiveIphone12.png)
 
 **iPhone SE**
 
-![iPhone SE view](docs/images/responsiveIphoneSe.png)
+![iPhone SE view](docs/screenshots/responsiveIphoneSe.png)
