@@ -1,0 +1,197 @@
+/* ======================================
+ * HEADER
+ * ====================================== */
+header {
+    height: var(--header-height);
+    background-color: var(--header-bg-color);
+    backdrop-filter: blur(var(--blur));
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+
+    .header-container {
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Navigation styles */
+    .menu {
+        .navLinks {
+            ul {
+                list-style: none;
+                display: flex;
+                gap: var(--spacing-lg);
+
+                li {
+                    display: inline-block;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--color-text-menu);
+                    font-weight: 600;
+                    padding: 4px 0;
+                    transition: border-bottom 0.2s ease;
+
+                    &:hover {
+                        color: var(--color-text-footer-hover);
+                    }
+
+                    &.active {
+                        border-bottom: 1px solid var(--color-text-menu);
+                    }
+                }
+            }
+        }
+    }
+
+    /* Menu burger */
+    .burger {
+        display: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--color-text-menu);
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+/* ======================================
+ * FOOTER
+ * ====================================== */
+footer {
+    width: 100%;
+    background-color: var(--color-bg-footer);
+    color: var(--color-text-footer);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+        font-family: var(--font-family-secondary), sans-serif;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+    }
+
+    ul {
+        list-style: none;
+
+        &:last-child {
+            margin-bottom: 1rem;
+        }
+
+        li {
+
+            padding-bottom: 0.5rem;
+
+            img {
+
+                height: 2rem;
+            }
+        }
+
+        a {
+            color: var(--color-text-footer);
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--color-text-footer-hover);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0;
+        padding: var(--spacing-sm) 0;
+        border-bottom: 1px solid var(--color-text-footer);
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: var(--spacing-md);
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: .5rem;
+
+        .footer-menu, .footer-legal, .footer-follow {
+            width: 300px;
+        }
+
+        .footer-follow {
+            display: flex;
+            flex-direction: column;
+
+            .social {
+                ul {
+                    display: flex;
+                    gap: var(--spacing-sm);
+
+                    li {
+                        padding-right: 1rem;
+
+                        a {
+                            img {
+                                transition: transform 0.3s ease-in-out;
+
+                                &:hover {
+                                    transform: scale(1.25);
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        padding: var(--spacing-sm) 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid var(--color-text-footer);
+
+        p {
+            font-size: var(--font-size-md);
+            margin-bottom: 0;
+        }
+
+        img {
+            height: 2rem;
+            padding: 0 var(--spacing-xs);
+        }
+    }
+}
+
+/* ======================================
+ * HIDDEN
+ * ====================================== */
+.burger {
+    display: none;
+}
+
+.vache {
+    display: none;
+}

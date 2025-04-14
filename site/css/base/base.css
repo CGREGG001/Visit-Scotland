@@ -1,0 +1,77 @@
+/* ======================================
+ * GLOBAL
+ * ====================================== */
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family-primary), serif;
+    font-size: 100%; /* Base 16px */
+}
+
+body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+}
+
+main {
+    display: block;
+}
+
+h1, h2, h3 {
+
+    color: var(--color-text-heading);
+    font-family: var(--font-family-secondary), serif;
+}
+
+h1 {
+    font-size: clamp(1.75rem, calc(1.3rem + 2.5vw), 2rem); /* 28px → 48px */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.75em;
+}
+
+h2 {
+    font-size: clamp(1.375rem, 1.1rem + 1.5vw, 2.25rem); /* 22px → 36px */
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.6em;
+}
+
+h3 {
+    font-size: clamp(1.125rem, 1rem + 1vw, 1.75rem); /* 18px → 28px */
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-family: var(--font-family-primary), serif;
+    font-size: clamp(0.9375rem, 0.875rem + 0.5vw, 1.25rem); /* 15px → 20px */
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.25em;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+}
+
+img, svg, video, canvas, picture {
+    display: block;
+    max-width: 100%;
+}
+
+/*TODO*/
+/*Éléments de formulaire (button, input, textarea, select): Souvent, on ajoute font: inherit; pour qu'ils utilisent la police du body par défaut.*/
+/*blockquote, figure, figcaption: Pourraient nécessiter un reset de marge ou un style de base.*/
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}

@@ -8,75 +8,75 @@
         content="Partez à la découverte de l’Écosse à travers ses paysages grandioses, son histoire fascinante et sa culture unique. Vivez une aventure inoubliable entre nature sauvage, traditions celtiques et accueil chaleureux.">
   <meta name="author" content="Colard Gregory">
   <meta name="keywords" content="Écosse, tourisme, voyage, Visitez l'Écosse">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
   <script src="scripts/nav.js" defer></script>
+  <script src="scripts/scrollHideHeader.js" defer></script>
+  <script src="scripts/buttonToTop.js" defer></script>
 </head>
-
 <body>
-<header>
+<header id="header">
   <div class="header-container">
-    <nav>
-      <div class="menu" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false">
-        <button type="button" class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="navLinks" role="navigation">
-          <ul>
-            <li><a href="index.html" aria-current="page" class="active">Accueil</a></li>
-            <li><a href="decouverte.html">Découvrir</a></li>
-            <li><a href="culture.html">Culture &amp; Traditions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="vache">
-            <img src="assets/icons/vache.svg" alt="tete de vache écossaise">
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="logo" aria-label="Retour à l’accueil">
+    <div class="logo">
       <a href="index.html" aria-label="Accueil - Visitez l'Écosse">
         <img src="assets/images/logo_white.svg" alt="Logo du site Visitez l'Écosse">
         <span>Scotland</span>
       </a>
     </div>
+    <nav>
+      <div class="menu">
+        <button type="button" class="burger" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false" aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="navLinks" class="navLinks">
+          <ul>
+            <li><a href="index.html" aria-current="page" class="active">Accueil</a></li>
+            <li><a href="decouverte.html">Découvrir</a></li>
+            <li><a href="culture.html">Culture & Traditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="vache"> <!-- pour le mode mobile -->
+            <img src="assets/icons/vache.svg" alt="" aria-hidden="true">
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
-
 <main>
-  <div id="bg-video">
-    <div class="video-container">
-      <video loop muted autoplay>
+  <section id="hero-video" aria-label="Vidéo d’introduction – paysages écossais">
+    <div class="hero-container">
+      <video class="hero-video-content" autoplay muted loop playsinline>
         <source src="assets/video/Scotland-cut.mp4" type="video/mp4">
         <!-- fallback content -->
         Votre navigateur ne supporte pas la balise vidéo.
       </video>
     </div>
-  </div>
 
-  <section id="welcome">
-    <div class="welcome-title">
-      <h1>Bienvenue en Écosse</h1>
-    </div>
-    <div class="welcome-text">
-      <p>Votre aventure écossaise commence maintenant. Plongez dans une terre imprégnée d'histoire et de légendes,
-        explorez nos paysages spectaculaires et découvrez nos racines celtiques anciennes. D'immenses lochs, vallées et
-        montagnes - facilement accessibles depuis nos villes animées - font de l'Écosse l'endroit parfait pour se
-        perdre.</p>
-      <p>Des vagues déferlantes sur nos côtes sauvages à la musique traditionnelle jouée en direct dans nos pubs locaux,
-        échappez au quotidien et vivez un véritable accueil écossais.</p>
-      <p lang="gd"><em>Fàilte gu Alba !</em></p>
+    <div class="welcome-overlay" aria-labelledby="welcome-title">
+        <h1 id="welcome-title">Bienvenue en Écosse</h1>
+        <div class="hero-welcome-text">
+          <p>Votre aventure écossaise commence maintenant. Plongez dans une terre imprégnée d'histoire et de légendes,
+            explorez nos paysages spectaculaires et découvrez nos racines celtiques anciennes. D'immenses lochs, vallées
+            et
+            montagnes, facilement accessibles depuis nos villes animées, font de l'Écosse l'endroit parfait pour se
+            perdre.</p>
+          <p>Des vagues déferlantes sur nos côtes sauvages à la musique traditionnelle jouée en direct dans nos pubs
+            locaux,
+            échappez au quotidien et vivez un véritable accueil écossais.</p>
+          <p lang="gd"><strong><em>Fàilte gu Alba !</em></strong></p>
+        </div>
     </div>
   </section>
-
   <section id="decouverte">
     <h2>Découvrir l'Écosse</h2>
-    <h3>À voir &amp; à faire en Écosse</h3>
+    <h3>À voir & à faire en Écosse</h3>
     <div class="decouverte-container">
       <div class="decouverte-item">
         <p>L’Écosse est une terre de contrastes, où l’histoire millénaire rencontre la nature sauvage et indomptée. Des
@@ -90,45 +90,41 @@
         <p>Préparez-vous à une aventure riche en émotions, entre nature grandiose, patrimoine fascinant et moments hors
           du temps.</p>
 
-        <div class="btn">
+        <div class="btn-primary">
           <a href="decouverte.html">Découvrez sans attendre</a>
         </div>
       </div>
 
       <div class="decouverte-img">
-        <img src="https://cdn.pixabay.com/photo/2021/04/05/14/57/scotland-6153760_960_720.jpg" alt="vallée de Glencoe">
+        <img src="assets/images/scotland-6153760_960_720.jpg" alt="vallée de Glencoe">
       </div>
 
     </div>
   </section>
-
   <section id="culture">
     <h2>Écosse : traditions vivantes</h2>
     <div class="culture-container">
       <div class="culture-img">
-<!--        <img src="assets/screenshots/kilts.jpg" alt="kilt">-->
-        <img src="https://cdn.pixabay.com/photo/2017/06/16/14/41/scotland-2409381_1280.jpg" alt="kilt">
+        <!--        <img src="assets/screenshots/kilts.jpg" alt="kilt">-->
+        <img src="assets/images/culture.avif" alt="Homme en kilt jouant de la cornemuse">
       </div>
       <div class="culture-item">
         <p>L'Écosse ouvre les portes d'un monde riche en traditions ancestrales, musique captivante et paysages
           légendaires. Découvrez les symboles emblématiques de son identité : le kilt, la cornemuse, la langue gaélique,
           les contes et bien plus encore.</p>
-
         <p>Participez à un ceilidh, où danses traditionnelles et rires réchauffent les cœurs. Laissez-vous porter par
-          les ballades écossaises qui racontent la vie, l’amour, la guerre et l’exil. Explorez les musées dédiés à
+          les balades écossaises qui racontent la vie, l’amour, la guerre et l’exil. Explorez les musées dédiés à
           l’histoire des Highlands, assistez à des jeux des Highlands (Highland Games), ou apprenez quelques mots en
           gaélique, cette langue ancienne qui continue de vivre dans certaines régions.</p>
-
         <p>Plonger dans la culture écossaise, c’est faire un bond dans le temps tout en découvrant une société moderne
           qui sait préserver l’essence de son héritage. C’est un voyage authentique, touchant, et profondément
           humain.</p>
-        <div class="btn">
+        <div class="btn-primary">
           <a href="culture.html">Découvrez sans attendre</a>
         </div>
       </div>
     </div>
   </section>
-
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-container">
@@ -137,13 +133,12 @@
 
         <p>Nous serions ravis d’échanger avec vous ! Que vous souhaitiez en apprendre davantage sur l’Écosse, partager
           une idée, poser une question ou nous faire part de vos impressions, n’hésitez pas à nous contacter.</p>
-        <div class="btn">
+        <div class="btn-primary">
           <a href="contact.html">Par ici</a>
         </div>
       </div>
     </div>
   </section>
-
   <section id="newsletter">
     <h2>Rejoignez notre newsletter</h2>
     <div class="newsletter-container">
@@ -152,8 +147,8 @@
         <p>Recevez de l'inspiration écossaise directement dans votre boîte mail. Ne manquez pas les conseils de nos
           experts sur les idées de voyages, les attractions uniques et les trésors cachés adorés des locaux.</p>
 
-        <div class="btn">
-          <a href="#">Rejoignez notre newsletter</a>
+        <div class="btn-primary">
+          <a href="404.html">Rejoignez notre newsletter</a>
         </div>
       </div>
 
@@ -164,7 +159,6 @@
     </div>
   </section>
 </main>
-
 <footer>
   <div class="logo">
     <a href="#" aria-label="Haut de page">
@@ -179,7 +173,7 @@
       <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="decouverte.html">Découvrir</a></li>
-        <li><a href="culture.html">Culture &amp; Traditions</a></li>
+        <li><a href="culture.html">Culture & Traditions</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -227,6 +221,10 @@
     <p>Tous droits réservés</p>
   </div>
 </footer>
-
+<button id="back-to-top" aria-label="Retour en haut de page" title="Retour en haut de page">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
 </body>
 </html>

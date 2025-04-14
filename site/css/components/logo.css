@@ -1,0 +1,36 @@
+/* ======================================
+ * LOGO
+ * ====================================== */
+.logo {
+    font-family: var(--font-family-secondary), sans-serif;
+    font-weight: bold;
+    width: 140px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+        color: var(--color-text-menu);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--color-text-menu);
+        }
+    }
+
+    span {
+        font-size: var(--font-size-lg);
+        text-transform: capitalize;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: var(--size-logo-default);
+    }
+}
