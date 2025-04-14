@@ -1,0 +1,34 @@
+/* Ajoutez ce CSS à votre fichier de style */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    width: var(--size-logo-default);
+    height: var(--size-logo-default);
+    /*background-color: var(--color-link);*/
+    background-color: transparent;
+    border: 3px solid var(--color-link);
+    color: var(--color-link);
+    /*border: none;*/
+    border-radius: 50%;
+    /*border-radius: var(--border-radius);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: var(--shadow-heavy);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, box-shadow 0.3s, scale 0.3s ease-in-out;
+}
+
+#back-to-top:hover {
+    scale: 0.9;
+    box-shadow: none;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}

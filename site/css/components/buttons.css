@@ -1,0 +1,44 @@
+/* ======================================
+ * BUTTONS
+ * ====================================== */
+.btn-primary {
+    margin-top: var(--spacing-md);
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border: 1px solid var(--color-link);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-heavy);
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+        background-color: var(--color-btn-bg-hover);
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-link);
+            text-decoration: none;
+        }
+    }
+}
+
+.btn-secondary {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+        background-color: red;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: lightpink;
+            text-decoration: none;
+        }
+    }
+}
