@@ -8,68 +8,71 @@
         content="Partez à la découverte de l’Écosse à travers ses paysages grandioses, son histoire fascinante et sa culture unique. Vivez une aventure inoubliable entre nature sauvage, traditions celtiques et accueil chaleureux.">
   <meta name="author" content="Colard Gregory">
   <meta name="keywords" content="Écosse, tourisme, voyage, Visitez l'Écosse">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
   <script src="scripts/nav.js" defer></script>
+  <script src="scripts/scrollHideHeader.js" defer></script>
+  <script src="scripts/buttonToTop.js" defer></script>
 </head>
 <body>
-
-<header>
+<header id="header">
   <div class="header-container">
-    <nav>
-      <div class="menu" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false">
-        <button type="button" class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <div class="navLinks" role="navigation">
-          <ul>
-            <li><a href="index.html" aria-current="page">Accueil</a></li>
-            <li><a href="#">Découvrir</a></li>
-            <li><a href="culture.html">Culture &amp; Traditions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="vache">
-            <img src="assets/images/social_icons/vache.svg" alt="tete de vache écossaise">
-          </div>
-        </div>
-      </div>
-    </nav>
-
     <div class="logo">
       <a href="index.html" aria-label="Accueil - Visitez l'Écosse">
         <img src="assets/images/logo_white.svg" alt="Logo du site Visitez l'Écosse">
         <span>Scotland</span>
       </a>
     </div>
-
+    <nav>
+      <div class="menu">
+        <button type="button" class="burger" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false"
+                aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="navLinks" class="navLinks">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="decouverte.html" aria-current="page" class="active">Découvrir</a></li>
+            <li><a href="culture.html">Culture & Traditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="vache"> <!-- pour le mode mobile -->
+            <img src="assets/icons/vache.svg" alt="" aria-hidden="true">
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
-
 <main>
-  <section id="introduction">
+  <!-- Section: Introduction -->
+  <section id="about-scotland">
     <h1>À propos de l'Écosse</h1>
-    <div class="introduction-container">
-      <div class="introduction-item">
+    <div class="about-container">
+      <div class="about-content">
         <p>L’Écosse est une destination à la fois sauvage, mystérieuse et profondément attachante. Située au nord du
           Royaume-Uni, elle séduit les voyageurs par la beauté brute de ses paysages : montagnes majestueuses des
           Highlands, vallées verdoyantes, lochs profonds aux reflets changeants, et côtes escarpées battues par les
           vents de l’Atlantique. Mais l’Écosse, c’est aussi une terre d’histoires et de légendes, où chaque château en
           ruine, chaque village isolé ou pierre ancienne semble murmurer un passé oublié.</p>
       </div>
+      <div class="about-panorama">
+        <img src="https://img.freepik.com/premium-photo/scottish-highlands-panorama-sunset_1013392-1916.jpg?w=1380" alt="panorama paysage isle skye">
+      </div>
     </div>
   </section>
 
-  <section id="video-promotionnelle">
+  <!-- Section: Vidéo Promotionnelle -->
+  <section id="highlands-video">
     <h2>Voyage au Cœur des Highlands</h2>
-    <div class="video-promotionnelle-container">
-      <div class="video-promotionnelle-item">
+    <div class="promo-video-container">
+      <div class="promo-video-description">
         <p>Découvrez la beauté époustouflante de l'Écosse à travers cette vidéo captivante. Laissez-vous transporter par
           ses paysages spectaculaires, son histoire fascinante et sa culture vibrante.</p>
       </div>
@@ -84,116 +87,117 @@
     </div>
   </section>
 
-  <section id="activites-populaires">
+  <!-- Section: Activités Populaires -->
+  <section id="popular-activities">
     <h2>Activités populaires</h2>
-    <div class="activites-populaires-container">
-      <article class="activites-card">
-        <div class="activites-card-img">
+    <div class="activities-grid">
+      <article class="activity-card">
+        <div class="activity-image">
           <a href="https://www.visitscotland.com/fr-fr/things-to-do/outdoor-activities/walking/routes-trails"
-             target="_blank"><img src="assets/images/randonnee.jpg"
-                                  alt="Paysage de randonnée dans les Highlands d'Écosse"></a>
+             target="_blank">
+            <img src="assets/images/randonnee.jpg" alt="Paysage de randonnée dans les Highlands d'Écosse">
+          </a>
         </div>
         <h3>Randonnée dans les Highlands</h3>
         <p>Découvrez des sentiers incroyables et des panoramas à couper le souffle dans les montagnes écossaises.</p>
       </article>
-
-      <article class="activites-card">
-        <div class="activites-card-img">
+      <article class="activity-card">
+        <div class="activity-image">
           <a href="https://www.visitscotland.com/things-to-do/food-drink/whisky/distilleries" target="_blank">
-            <img src="assets/images/distillery.jpg" alt="Distillerie de whisky en Écosse"></a>
+            <img src="assets/images/distillery.jpg" alt="Distillerie de whisky en Écosse">
+          </a>
         </div>
         <h3>Visite des distilleries de whisky</h3>
         <p>Explorez les distilleries emblématiques et dégustez le célèbre whisky écossais.</p>
       </article>
-
-      <article class="activites-card">
-        <div class="activites-card-img">
+      <article class="activity-card">
+        <div class="activity-image">
           <a href="https://www.visitscotland.com/things-to-do/attractions/castles/highlands-itinerary" target="_blank">
-            <img src="assets/images/castle.jpg" alt="Château écossais majestueux dans la brume"></a>
+            <img src="assets/images/castle.jpg" alt="Château écossais majestueux dans la brume">
+          </a>
         </div>
         <h3>Découverte des châteaux</h3>
         <p>Plongez dans l'histoire en visitant des châteaux majestueux et mystérieux.</p>
       </article>
-
-      <article class="activites-card">
-        <div class="activites-card-img">
+      <article class="activity-card">
+        <div class="activity-image">
           <a href="https://www.visitscotland.com/things-to-do/events" target="_blank">
             <img src="https://negearth.co.uk/wp-content/uploads/2022/09/650-s_019-credit-The-Royal-Edinburgh-Military-Tattoo-e1662109790790.jpeg"
-                 alt="Participants en costume traditionnel lors d'un festival écossais"></a>
+                 alt="Participants en costume traditionnel lors d'un festival écossais">
+          </a>
         </div>
         <h3>Festivals traditionnels</h3>
-        <p>Vivez l’ambiance unique des festivals écossais comme les Highland Games ou le Royal Edinburgh Military
-          Tattoo.</p>
+        <p>Vivez l’ambiance unique des festivals écossais comme les Highland Games ou le Tattoo.</p>
       </article>
-
-      <article class="activites-card">
-        <div class="activites-card-img">
+      <article class="activity-card">
+        <div class="activity-image">
           <a href="https://www.visitscotland.com/things-to-do/tours/wildlife-tours" target="_blank">
             <img src="https://mobile-img.lpcdn.ca/lpca/924x/c1c67a47-6a0d-11eb-a88b-02fe89184577.jpg"
-                 alt="Cerf rouge observé dans les Highlands"></a>
+                 alt="Cerf rouge observé dans les Highlands">
+          </a>
         </div>
         <h3>Observation de la faune écossaise</h3>
-        <p>Partez à la rencontre des cerfs, loutres, phoques et aigles dans leur habitat naturel, au cœur de paysages
-          sauvages et préservés.</p>
+        <p>Partez à la rencontre des cerfs, loutres, phoques et aigles dans leur habitat naturel.</p>
       </article>
-
-      <article class="activites-card">
-        <div class="activites-card-img">
+      <article class="activity-card">
+        <div class="activity-image">
           <a href="https://www.visitscotland.com/accommodation/caravan-camping/wild-camping" target="_blank">
             <img src="https://i0.wp.com/www.frenchkilt.com/wp-content/uploads/2018/11/Loch-Trool.jpg"
-                 alt="Tente plantée près d’un loch dans les Highlands écossais"></a>
+                 alt="Tente plantée près d’un loch dans les Highlands écossais">
+          </a>
         </div>
         <h3>Camping sauvage en Écosse</h3>
-        <p>Vivez une expérience unique en pleine nature. Campez librement dans des paysages à couper le souffle, sous
-          les étoiles écossaises.</p>
+        <p>Vivez une expérience unique en pleine nature, sous les étoiles écossaises.</p>
       </article>
     </div>
   </section>
 
-  <section id="meilleurs-endroits">
+  <!-- Section: Top Locations -->
+  <section id="top-destinations">
     <h2>Les meilleurs endroits à visiter en Écosse</h2>
-    <div class="table-container">
-      <table>
+    <div class="table-wrapper">
+      <table class="location-table">
+        <thead>
         <tr>
           <th>Lieu</th>
           <th>Description</th>
           <th>Particularité</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
           <td><a href="https://www.edinburgh.org" target="_blank">Édimbourg</a></td>
-          <td>Capitale historique avec un château emblématique et une vieille ville médiévale classée au patrimoine
-            mondial de l'UNESCO.
-          </td>
+          <td>Capitale historique avec un château emblématique et une vieille ville classée UNESCO.</td>
           <td>Festival international d'Édimbourg et architecture médiévale exceptionnelle.</td>
         </tr>
         <tr>
           <td><a href="https://www.isleofskye.com/" target="_blank">Île de Skye</a></td>
-          <td>Île aux paysages sauvages et aux falaises spectaculaires dans les Hébrides intérieures.</td>
-          <td>Randonnées de renommée mondiale et sites naturels préservés comme le Old Man of Storr.</td>
+          <td>Île aux paysages sauvages et falaises spectaculaires dans les Hébrides intérieures.</td>
+          <td>Randonnées de renommée mondiale comme le Old Man of Storr.</td>
         </tr>
         <tr>
           <td><a href="https://www.visitinvernesslochness.com" target="_blank">Loch Ness</a></td>
-          <td>Lac profond célèbre pour sa légende du monstre Nessie et ses paysages pittoresques.</td>
-          <td>Excursions en bateau, château d'Urquhart et centre d'exposition dédié à Nessie.</td>
+          <td>Lac célèbre pour sa légende du monstre Nessie et ses paysages pittoresques.</td>
+          <td>Excursions en bateau, château d'Urquhart et musée de Nessie.</td>
         </tr>
         <tr>
           <td><a href="https://www.visitscotland.com/fr-fr/destinations-maps/glencoe/" target="_blank">Glencoe</a></td>
-          <td>Vallée spectaculaire aux montagnes impressionnantes, célèbre pour son histoire tragique.</td>
-          <td>Randonnées de tous niveaux et paysages dramatiques immortalisés dans de nombreux films.</td>
+          <td>Vallée spectaculaire, célèbre pour ses montagnes et son histoire tragique.</td>
+          <td>Randonnées et paysages de cinéma.</td>
         </tr>
         <tr>
           <td><a href="https://www.yourstirling.com/" target="_blank">Stirling</a></td>
-          <td>Ville historique stratégique avec un château médiéval imposant et le monument Wallace.</td>
-          <td>Histoire riche liée à William Wallace, Robert Bruce et aux guerres d'indépendance écossaises.</td>
+          <td>Ville stratégique avec un château et le monument Wallace.</td>
+          <td>Histoire riche liée à William Wallace et Robert Bruce.</td>
         </tr>
+        </tbody>
       </table>
     </div>
   </section>
 </main>
-
 <footer>
   <div class="logo">
-    <a href="index.html" aria-label="Haut de page">
+    <a href="index.html" aria-label="Page d'accueil">
       <img src="assets/images/logo_white.svg" alt="logo du site Scotland">
       <span>Scotland</span>
     </a>
@@ -224,22 +228,22 @@
         <ul>
           <li>
             <a href="https://www.instagram.com/visitscotland/" target="_blank">
-              <img src="assets/images/social_icons/instagram.png" alt="Instagram">
+              <img src="assets/icons/instagram.png" alt="Instagram">
             </a>
           </li>
           <li>
             <a href="https://www.youtube.com/@visitscotland" target="_blank">
-              <img src="assets/images/social_icons/youtube.png" alt="Youtube">
+              <img src="assets/icons/youtube.png" alt="Youtube">
             </a>
           </li>
           <li>
             <a href="https://x.com/VisitScotland" target="_blank">
-              <img src="assets/images/social_icons/twitter.png" alt="X ex-twitter">
+              <img src="assets/icons/twitter.png" alt="X ex-twitter">
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/visitscotland" target="_blank">
-              <img src="assets/images/social_icons/facebook.png" alt="facebook">
+              <img src="assets/icons/facebook.png" alt="facebook">
             </a>
           </li>
         </ul>
@@ -249,10 +253,15 @@
 
   <div class="copyright">
     <p>&copy; 2025 Visitez l'Écosse</p>
-    <img src="assets/images/social_icons/vache.svg" alt="Easter egg">
+    <img src="assets/icons/vache.svg" alt="Easter egg">
     <p>Tous droits réservés</p>
   </div>
 </footer>
-
+<button id="back-to-top" aria-label="Retour en haut de page" title="Retour en haut de page">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
 </body>
 </html>

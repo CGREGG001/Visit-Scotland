@@ -9,7 +9,7 @@ html {
 
 body {
     background-color: var(--color-bg-main);
-    color: var(--color-text-primary);
+    color: var(--color-primary);
     line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ main {
 
 h1, h2, h3 {
 
-    color: var(--color-text-heading);
+    color: var(--color-heading);
     font-family: var(--font-family-secondary), serif;
 }
 
