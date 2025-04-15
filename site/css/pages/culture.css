@@ -1,0 +1,133 @@
+/* ======================================
+ * CULTURE
+ * ====================================== */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* ========== ABOUT  ========== */
+#about-culture {
+    width: 100%;
+    margin-top: var(--spacing-xl);
+
+    h1 {
+        font-size: var(--font-size-xxl);
+    }
+
+    .about-container {
+        max-width: var(--max-width-container-md);
+        margin: 0 auto;
+
+        .about-content {
+            max-width: var(--max-width-container-sm);
+            padding: 0 var(--spacing-lg);
+            margin: 0 auto;
+        }
+    }
+}
+
+#piliers-culture {
+    background-color: var(--color-bg-section);
+    max-width: var(--max-width-container-md);
+
+    .culture-item {
+        max-width: var(--max-width-container-sm);
+        margin: 0 auto 3rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            padding: 0 var(--spacing-md);
+        }
+
+        figure {
+            width: 70%;
+            margin-top: 2rem;
+            background-color: var(--color-bg-main);
+            border-radius: var(--border-radius);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: var(--shadow-light);
+
+            img {
+                width: 100%;
+                display: block;
+                object-fit: cover;
+                border-radius: var(--border-radius) var(--border-radius) 0 0;
+            }
+
+            figcaption {
+                padding: 1rem .5rem;
+            }
+        }
+
+        .audio-samples {
+            width: 100%;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            figure {
+                margin: 20px 0;
+                padding: 15px;
+                box-shadow: var(--shadow-light);
+
+                background-color: var(--color-bg-main);
+
+                figcaption {
+
+                    /*padding: 0;*/
+                }
+
+                audio {
+                    width: 100%;
+                    height: 40px;
+                }
+
+                /*bouton play*/
+                audio::-webkit-media-controls-play-button {
+                    background-color: var(--color-link);
+                    border-radius: 50%;
+                }
+
+                /*fond du lecteur*/
+                audio::-webkit-media-controls-panel {
+                    background-color: var(--color-link-hover);
+                    border-radius: 0;
+                    border: none;
+                }
+            }
+        }
+
+    }
+}
+
+#conclusion {
+    max-width: var(--max-width-container-sm);
+    padding: 4rem 2rem;
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+}

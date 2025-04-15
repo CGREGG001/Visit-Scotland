@@ -1,8 +1,8 @@
 /* Ajoutez ce CSS à votre fichier de style */
 #back-to-top {
     position: fixed;
-    bottom: 50vh;
-    right: 30px;
+    bottom: 8vh;
+    right: 4vh;
     z-index: 99;
     width: var(--logo-size);
     height: var(--logo-size);
