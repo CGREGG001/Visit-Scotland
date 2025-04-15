@@ -1,0 +1,177 @@
+/* ======================================
+ * DISCOVERY
+ * ====================================== */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* ========== ABOUT  ========== */
+#about-scotland {
+    width: 100%;
+    margin-top: var(--spacing-xl);
+
+    h1 {
+        font-size: var(--font-size-xxl);
+    }
+
+    .about-container {
+        max-width: var(--max-width-container-md);
+        margin: 0 auto;
+
+        .about-content {
+            max-width: var(--max-width-container-sm);
+            padding: 0 var(--spacing-lg);
+            margin: 0 auto;
+        }
+
+        .about-panorama {
+            width: 100%;
+
+            img {
+                margin-top: var(--spacing-lg);
+                width: 100%;
+            }
+        }
+    }
+}
+
+#highlands-video,
+#top-destinations {
+    background-color: var(--color-bg-section);
+}
+
+/* ========== HIGHLANDS-VIDEO  ========== */
+#highlands-video {
+    width: 100%;
+
+    .promo-video-container {
+        max-width: var(--max-width-container-sm);
+        margin: 0 auto;
+
+        .promo-video-description {
+            padding: 0 var(--spacing-lg);
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            margin: 3rem auto 0;
+            padding-bottom: 56.25%; /* 16:9  ??? */
+            height: 0;
+
+            iframe {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                border: none;
+                border-radius: 6px;
+            }
+        }
+    }
+
+
+    #popular-activities,
+    #top-destinations {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .activities-grid {
+        margin: 0 auto;
+        max-width: var(--max-width-container-lg);
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+/* ========== ACTIVITIES  ========== */
+#popular-activities {
+    width: 100%;
+
+    .activities-grid {
+        max-width: var(--max-width-container-md);
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+/* ========== TOP-DESTINATIONS  ========== */
+#top-destinations {
+    .table-wrapper{
+        width: 100%;
+        max-width: var(--max-width-container-lg);
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .location-table {
+            width: 95%;
+            /* background-color: var(--main-bg-color); */
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            margin-bottom: var(--spacing-md);
+
+            tr {
+                text-align: left;
+
+                &:nth-child(even) {
+                    background-color: var(--color-bg-main);
+                }
+
+
+                td {
+                    padding: 1rem 1.2rem;
+                    vertical-align: top;
+                    line-height: 1.6;
+
+
+                    a {
+                        color: #8839ef;
+                        text-decoration: none;
+                        position: relative;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            text-decoration: underline;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                th {
+                    padding: .6rem 1.2rem;
+                    background-color: var(--color-bg-header);
+                }
+            }
+        }
+    }
+}
