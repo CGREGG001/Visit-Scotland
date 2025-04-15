@@ -2,36 +2,18 @@
     /* ======================================
      * TYPOGRAPHIE
      * ====================================== */
-    /* Familles de polices */
     --font-family-primary: 'Arimo', sans-serif;
     --font-family-secondary: 'Montserrat', sans-serif;
 
-    /* Tailles de police */
-    --font-size-xs: 0.75rem;       /* 12px */
-    --font-size-sm: 0.875rem;      /* 14px */
-    --font-size-md: 1rem;          /* 16px */
-    --font-size-lg: 1.25rem;       /* 20px */
-    --font-size-xl: 2rem;          /* 32px */
-    --font-size-xxl: 3rem;         /* 48px */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-md: 1rem;       /* 16px */
+    --font-size-lg: 1.25rem;    /* 20px */
+    --font-size-xl: 2rem;       /* 32px */
+    --font-size-xxl: 3rem;      /* 48px */
 
-    /* Couleurs de texte */
-    --color-text-primary: rgb(73, 60, 86);
-    --color-text-heading: rgb(32, 15, 46);
-
-    /* ======================================
-     * LAYOUT & COMPOSANTS
-     * ====================================== */
-    /* Bordures et ombres */
-    --border-radius: 6px;
-    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --shadow-heavy: 0 4px 14px rgba(0, 0, 0, 0.1);
-
-    /* Espacements (utilitaires) */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 6rem;
+    --color-primary: rgb(73, 60, 86);
+    --color-heading: rgb(32, 15, 46);
 
     /* ======================================
      * COULEURS DE FOND
@@ -41,12 +23,26 @@
     --color-bg-welcome: #ffffff;
 
     /* ======================================
+     * COULEURS SPÉCIFIQUES
+     * ====================================== */
+    --color-accent: #C090EC;
+    --color-error: #7821EA;
+    --color-link: #7821EA;
+    --color-link-hover: #C090EC;
+
+    /* ======================================
+     * BOUTONS
+     * ====================================== */
+    --color-btn-bg: #17359C;
+    --color-btn-bg-hover: #C090EC;
+
+    /* ======================================
      * HEADER
      * ====================================== */
     --header-height: 60px;
-    --size-logo-default: 40px;
-    --header-bg-color: rgba(91, 36, 135, 0.6);
-    --header-bg-color-solid: #8356be;
+    --logo-size: 40px;
+    --color-bg-header: rgba(91, 36, 135, 0.6);
+    --color-bg-header-solid: #8356be;
     --color-text-menu: #F4F4F4;
 
     /* ======================================
@@ -57,91 +53,66 @@
     --color-text-footer-hover: #bf9bfa;
 
     /* ======================================
-     * BOUTONS
+     * ESPACEMENTS
      * ====================================== */
-    --color-btn-bg: #17359C;
-    --color-btn-bg-hover: #C090EC;
-    --color-link: #7821EA;
-    --color-link-hover: #C090EC;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
 
     /* ======================================
-     * PAGE D'ERREUR
+     * BORDURES & EFFETS
      * ====================================== */
-    --color-accent: #C090EC;
-    --color-error: #7821EA;
-
-
+    --border-radius: 6px;
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0 4px 14px rgba(0, 0, 0, 0.1);
     --blur: 15px;
-    --container-max-width: 1400px;
 
+    /* ======================================
+     * TAILLES MAX CONTAINERS
+     * ====================================== */
+    --max-width-container-sm: 1200px;
+    --max-width-container-md: 1440px;
+    --max-width-container-lg: 1600px;
 }
 
-/* dark mode */
+/* ======================================
+ * DARK MODE
+ * ====================================== */
 @media (prefers-color-scheme: dark) {
     :root {
-     /*   !* ======================================*/
-     /** COULEURS DE FOND*/
-     /** ====================================== *!*/
-     /*   --color-bg-main: rgb(51, 86, 128);*/
-     /*   --color-bg-section: rgba(51, 51, 51, 0.88);*/
-     /*   --color-bg-welcome: rgba(128, 128, 128, 0.34);*/
+        --color-primary: rgb(200, 200, 200);
+        --color-heading: rgb(220, 220, 220);
 
-     /*   !* ======================================*/
-     /*    * HEADER*/
-     /*    * ====================================== *!*/
-     /*   --size-logo-default: 40px;*/
-     /*   --header-bg-color: rgba(91, 36, 135, 0.7);*/
-     /*   --header-bg-color-solid: #8356be;*/
-     /*   --color-text-menu: #F4F4F4;*/
+        --color-bg-main: rgb(42, 38, 51);
+        --color-bg-section: #444050;
+        --color-bg-welcome: #444050;
 
-     /*   !* ======================================*/
-     /*    * FOOTER*/
-     /*    * ====================================== *!*/
-     /*   --color-bg-footer: rgb(32, 15, 46);*/
-     /*   --color-text-footer: #f4f4f4;*/
-     /*   --color-text-footer-hover: #bf9bfa;*/
+        --shadow-light: 0 2px 4px rgba(255, 255, 255, 0.1);
+        --shadow-heavy: 0 0 8px rgb(187, 134, 245);
 
-     /*   !* ======================================*/
-     /*    * BOUTONS*/
-     /*    * ====================================== *!*/
-     /*   --color-btn-bg: #17359C;*/
-     /*   --color-btn-bg-hover: #1C42C1;*/
+        --color-bg-header: rgba(58, 43, 90, 0.7);
+        --color-bg-header-solid: #3a2b5a;
+        --color-text-menu: #f4f4f4;
 
-     /*   !* ======================================*/
-     /*    * PAGE D'ERREUR*/
-     /*    * ====================================== *!*/
-     /*   --color-accent: #C090EC;*/
-     /*   --color-error: #7821EA;*/
+        --color-bg-footer: #131217;
+        --color-text-footer: #C0C0C0;
+        --color-text-footer-hover: #755faf;
 
+        --color-btn-bg: #0e2261;
+        --color-btn-bg-hover: #412b57;
 
-            --color-text-primary: rgb(200, 200, 200);
-            --color-text-heading: rgb(220, 220, 220);
-            --color-bg-main: rgb(42, 38, 51);
-            --color-bg-section: #444050;
-            --color-bg-welcome: #444050;
-            --shadow-light: 0 2px 4px rgba(255, 255, 255, 0.1);
-            --shadow-heavy: 0 0 8px rgb(187, 134, 245);
-
-
-        --header-bg-color-solid: #3a2b5a;
-        --header-bg-color: rgba(58, 43, 90, 0.7);
-            --color-text-menu: #f4f4f4;
-            --color-bg-footer: #131217;
-            --color-text-footer: #C0C0C0;
-            --color-text-footer-hover: #755faf;
-            --color-btn-bg: #0e2261;
-            --color-btn-bg-hover: #412b57;
-            --color-link: #bb86f5;
-            --color-link-hover: #d1bcf8;
-
-
-
-
+        --color-link: #bb86f5;
+        --color-link-hover: #d1bcf8;
     }
 }
 
+/* ======================================
+ * RESPONSIVE
+ * ====================================== */
 @media (max-width: 768px) {
     :root {
-        --logo-height: 30px;
+        --logo-size-sm: 30px;
     }
 }

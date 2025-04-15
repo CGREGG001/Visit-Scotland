@@ -31,6 +31,6 @@
     img {
         display: block;
         width: 100%;
-        height: var(--size-logo-default);
+        height: var(--logo-size);
     }
 }
