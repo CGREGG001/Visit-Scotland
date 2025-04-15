@@ -32,7 +32,3 @@ build/
 
 # Fichiers de sauvegarde
 *~
-
-# ne pas exclure assets/icons/*
-!assets/icons/
-!assets/icons/**
