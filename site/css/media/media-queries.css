@@ -25,13 +25,20 @@
     #decouverte {
         margin-top: 0;
     }
+
+    #about-scotland,
+    #highlands-video {
+        padding-bottom: 0;
+    }
 }
 
 /* Ipad & Laptop */
 @media (min-width: 768px) and (max-width: 1024px) {
     main {
-        /* ========== HERO (HOME) ========== */
-
+        /* ======================================
+         * HOME
+         * ====================================== */
+        /* ========== HERO ========== */
         #hero-video {
             width: 100%;
             margin-bottom: 0;
@@ -50,19 +57,16 @@
         }
 
         /* ========== DISCOVERY ========== */
-
         #decouverte {
             margin-top: 0;
         }
 
         /* ========== CULTURE ========== */
-
         #culture .culture-container {
             flex-direction: column-reverse;
         }
 
         /* ========== GLOBAL HOME ========== */
-
         #decouverte,
         #culture,
         #contact,
@@ -95,19 +99,15 @@
             }
         }
 
-        /* ========== BEST PLACES (DISCOVERY) ========== */
-
-        #meilleurs-endroits {
-            padding: 0;
-
-            .table-container table {
-                width: 100%;
-
-                td, th {
-                    padding: 1rem 0.8rem;
-                }
-            }
+        /* ======================================
+         * DISCOVERY
+         * ====================================== */
+        /* ==========  ABOUT ========== */
+        #about-scotland,
+        #highlands-video {
+            padding-bottom: 0;
         }
+
     }
 }
 
@@ -238,7 +238,11 @@
             padding-bottom: 2rem;
         }
 
-        /* ========== HOME ========== */
+        /* ======================================
+         * DISCOVERY
+         * ====================================== */
+
+        /* ========== HERO ========== */
 
         #hero-video {
             width: 100%;
@@ -260,22 +264,13 @@
                 h1 {
                     text-align: center;
                 }
-
-                .hero-welcome-text {
-                    padding: 0 32px;
-                }
             }
         }
+
+        /* ========== DISCOVERY ========== */
 
         #decouverte {
             margin-top: 0;
-        }
-
-        #decouverte,
-        #culture {
-            h2, h3 {
-                padding-bottom: 0;
-            }
         }
 
         #decouverte,
@@ -312,59 +307,41 @@
             }
         }
 
+        /* ========== CULTURE ========== */
+
         #culture .culture-container {
             flex-direction: column-reverse;
         }
 
-        /* ========== DISCOVERY ========== */
-
-        #introduction h1 {
+        /* ======================================
+         * DISCOVERY
+         * ====================================== */
+        /* ==========  ABOUT / VIDEO ========== */
+        #about-scotland {
             margin-top: 0;
         }
 
-        #video-promotionnelle {
+        #about-scotland,
+        #highlands-video {
             padding-bottom: 0;
-            width: 100%;
 
-            .video-promotionnelle-container .video-wrapper {
-                width: 100%;
+            .about-container .about-content {
+                padding: 0 var(--spacing-sm);
+            }
 
-                iframe {
-                    border-radius: 0;
-                    margin-top: 3rem;
-                }
+            .promo-video-container .promo-video-description {
+                padding: 0 var(--spacing-sm);
             }
         }
 
-        #activites-populaires h2 {
-            padding: 3rem 0 2rem;
+        /* ==========  ACTIVITIES ========== */
+        #popular-activities {
+            margin-bottom: var(--spacing-md);
         }
 
-        #meilleurs-endroits {
+        /* ==========  DESTINATIONS ========== */
+        #top-destinations {
             display: none;
-        }
-
-        #piliers-culture {
-            h2 {
-                font-size: 1.3rem;
-                padding: 2rem 0 1rem;
-            }
-
-            h3 {
-                font-size: 1rem;
-            }
-
-            .culture-item {
-                padding-top: 0;
-
-                figure {
-                    width: 100%;
-
-                    figcaption {
-                        align-self: start;
-                    }
-                }
-            }
         }
     }
 
