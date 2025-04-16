@@ -123,3 +123,8 @@ h3 {
 #contact {
     text-align: center;
 }
+
+#newsletter .newsletter-container .newsletter-item {
+    max-width: 50%;
+    text-align: center;
+}
