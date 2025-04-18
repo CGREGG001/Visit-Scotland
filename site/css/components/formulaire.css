@@ -1,0 +1,214 @@
+/* ======================================
+ * FORMULAIRE DE CONTACT
+ * ====================================== */
+
+#formulaire {
+    background-color: var(--color-bg-section);
+
+    .container {
+        max-width: 900px;
+        height: auto;
+        margin: 3rem auto 5rem;
+        background-color: var(--color-bg-main);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+    }
+}
+
+/*form {*/
+/*    padding: 2rem;*/
+/*}*/
+
+fieldset {
+    border: 1px solid var(--color-link);
+    background-color: var(--color-bg-section);
+    border-radius: 8px;
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 0.5s ease-out forwards;
+
+}
+
+legend {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-link);
+}
+
+.name-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+input {
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"] {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--color-link);
+        border-radius: 8px;
+        margin-bottom: 1.25rem;
+        background-color: var(--color-bg-main);
+        color: var(--color-primary);
+        font-size: 1rem;
+        transition: var(--transition);
+    }
+
+    &[type="checkbox"] {
+        appearance: none;
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 1px solid var(--color-link);
+        border-radius: 4px;
+        position: relative;
+        margin-top: 0.25rem;
+
+        &:checked {
+            background-color: var(--color-link-hover);
+            border-color: var(--color-link);
+
+            &::after {
+                content: '✓';
+                position: absolute;
+                color: white;
+                font-size: 0.9rem;
+                font-weight: bold;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-link);
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+    background-color: var(--color-bg-main);
+    color: var(--color-primary);
+    font-size: 1rem;
+    transition: var(--transition);
+    resize: none;
+
+    &:focus {
+        box-shadow: var(--shadow-heavy);
+    }
+}
+
+.rgpd-notice {
+    margin-bottom: 1.5rem;
+
+    details {
+        margin-bottom: 1rem;
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    summary {
+        font-weight: 500;
+        cursor: pointer;
+        padding: 0.5rem 0;
+    }
+
+    .consent-checkbox {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+}
+
+button.btn-primary {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: var(--color-link);
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 0.5rem;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    svg {
+        margin-right: 0.35rem;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+    }
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
