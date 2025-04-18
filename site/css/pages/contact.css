@@ -1,0 +1,76 @@
+/* ======================================
+ * CONTACT
+ * ====================================== */
+/* ========== CONTACT-HEADER  ========== */
+#contact-header {
+    width: 100%;
+    margin-top: var(--spacing-xl);
+    max-width: var(--max-width-container-md);
+    background-color: var(--color-bg-section);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: var(--font-size-xxl);
+    }
+
+    .contact-content {
+        max-width: var(--max-width-container-sm);
+        padding: 0 var(--spacing-lg);
+    }
+}
+
+
+#formulaire {
+    background-color: var(--color-bg-main);
+    padding-bottom: 0;
+}
+
+/* ========== COORDONNEES  ========== */
+#contact-info {
+    background-color: var(--color-bg-section);
+    max-width: var(--max-width-container-md);
+
+    .container {
+        gap: 2rem;
+
+        p {
+            padding-bottom: 1rem;
+        }
+
+        .info {
+            li {
+                list-style: none;
+            }
+        }
+    }
+}
+
+/* ========== FAQ  ========== */
+#faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        padding-bottom: 2rem;
+
+    }
+
+    .faq-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        details {
+            text-align: center;
+            padding: .5rem;
+        }
+    }
+}

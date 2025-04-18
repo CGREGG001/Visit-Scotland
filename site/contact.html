@@ -8,129 +8,168 @@
         content="Prenez contact avec notre équipe pour organiser votre voyage en Écosse. Posez vos questions, demandez des conseils ou des informations personnalisées.">
   <meta name="author" content="Colard Gregory">
   <meta name="keywords" content="Contact, Écosse, tourisme, voyage, formulaire, Visitez l'Écosse">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
   <script src="scripts/nav.js" defer></script>
+  <script src="scripts/scroll-hide-header.js" defer></script>
+  <script src="scripts/button-to-top.js" defer></script>
+  <script src="scripts/formulaire.js" defer></script>
 </head>
 <body>
-
-<header>
+<header id="header">
   <div class="header-container">
-    <nav>
-      <div class="menu" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false">
-        <button type="button" class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="navLinks" role="navigation">
-          <ul>
-            <li><a href="index.html" aria-current="page">Accueil</a></li>
-            <li><a href="decouverte.html">Découvrir</a></li>
-            <li><a href="culture.html">Culture &amp; Traditions</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <div class="vache">
-            <img src="assets/images/social_icons/vache.svg" alt="tete de vache écossaise">
-          </div>
-        </div>
-      </div>
-    </nav>
     <div class="logo">
       <a href="index.html" aria-label="Accueil - Visitez l'Écosse">
         <img src="assets/images/logo_white.svg" alt="Logo du site Visitez l'Écosse">
         <span>Scotland</span>
       </a>
     </div>
+    <nav>
+      <div class="menu">
+        <button type="button" class="burger" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false"
+                aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="navLinks" class="navLinks">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="discover.html">Découvrir</a></li>
+            <li><a href="culture.html">Culture &amp; Traditions</a></li>
+            <li><a href="contact.html" aria-current="page" class="active">Contact</a></li>
+          </ul>
+          <div class="vache"> <!-- pour le mode mobile -->
+            <img src="assets/ui-icons/vache.svg" alt="" aria-hidden="true">
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
 
 <main>
-  <section id="formulaire">
-    <div class="container">
-
-      <h1>Une question sur l'Écosse ?</h1>
+  <section id="contact-header">
+    <h1>Une question sur l'Écosse ?</h1>
+    <div class="contact-content">
       <p>
         Vous planifiez un voyage en Écosse ou avez simplement des questions ? Remplissez le formulaire ci-dessous et
         notre
         équipe vous répondra dans les meilleurs délais. Nous sommes là pour vous guider et vous faire découvrir les
         merveilles écossaises !
       </p>
+    </div>
+  </section>
 
+  <section id="formulaire">
+    <h2>Demande d'information</h2>
+    <div class="container">
       <form aria-label="Formulaire de contact">
-        <fieldset>
-          <legend>Formulaire de contact</legend>
+        <!-- Groupe : Coordonnées personnelles -->
+        <fieldset aria-labelledby="coordonnees">
+          <legend id="coordonnees">Vos coordonnées</legend>
 
-          <div>
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
-          </div>
+          <div class="name-group">
+            <div>
+              <label for="surname">Prénom :</label>
+              <input type="text" id="surname" name="surname" placeholder="Entrez votre prénom" autocomplete="given-name"
+                     required>
+            </div>
 
-          <div>
-            <label for="surname">Prénom :</label>
-            <input type="text" id="surname" name="surname" placeholder="Entrez votre prénom" required>
+            <div>
+              <label for="name">Nom :</label>
+              <input type="text" id="name" name="name" placeholder="Entrez votre nom" autocomplete="family-name"
+                     required>
+            </div>
           </div>
 
           <div>
             <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+            <input type="email" id="email" name="email" placeholder="exemple@mail.com" autocomplete="email" required>
           </div>
 
           <div>
             <label for="phone">Téléphone :</label>
-            <input type="tel" id="phone" name="phone" placeholder="+32 81 69 69 69" required>
+            <input type="tel" id="phone" name="phone" placeholder="+32 81 69 69 69" autocomplete="tel" required>
           </div>
+        </fieldset>
+
+        <!-- Groupe : Message -->
+        <fieldset aria-labelledby="messagelegend">
+          <legend id="messagelegend">Votre message</legend>
 
           <div>
             <label for="message">Message :</label>
             <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."
                       required></textarea>
           </div>
-
-          <div class="rgpd-notice">
-            <details>
-              <summary>Protection des données :</summary>
-              <p>
-                Les informations recueillies via ce formulaire sont enregistrées
-                dans un fichier informatisé par Visitez l'Écosse pour répondre à vos demandes d'information. Elles sont
-                conservées pendant 2 ans et sont destinées uniquement à notre service client. Conformément au RGPD, vous
-                pouvez exercer votre droit d'accès, de rectification, d'effacement et de limitation du traitement en nous
-                contactant à <a href="mailto:privacy@visitez-ecosse.com">privacy@visitez-ecosse.com</a>.
-              </p>
-            </details>
-
-            <div class="consent-checkbox">
-              <input type="checkbox" id="data-consent" name="data-consent" required>
-              <label for="data-consent">
-                J'accepte que mes données soient traitées selon la <a href="confidentialite.html">politique de
-                confidentialité</a> du site.
-              </label>
-            </div>
-          </div>
-
-          <div>
-            <button type="submit" class="btn">Envoyer</button>
-          </div>
-
-          <p>
-            Vous pouvez aussi nous écrire sur nos réseaux sociaux :
-            <a href="https://www.instagram.com/visitscotland/" target="_blank">Instagram</a>,
-            <a href="https://www.facebook.com/visitscotland" target="_blank">Facebook</a> ou
-            <a href="https://x.com/VisitScotland" target="_blank">X</a>.
-          </p>
         </fieldset>
+
+        <!-- RGPD -->
+        <div class="rgpd-notice">
+          <details>
+            <summary>Protection des données :</summary>
+            <p>
+              Les informations recueillies via ce formulaire sont enregistrées dans un fichier informatisé par Visitez
+              l'Écosse pour répondre à vos demandes d'information. Elles sont conservées pendant 2 ans et sont destinées
+              uniquement à notre service client. Conformément au RGPD, vous pouvez exercer votre droit d'accès, de
+              rectification, d'effacement et de limitation du traitement en nous contactant à
+              <a href="mailto:privacy@visitez-ecosse.com">privacy@visitez-ecosse.com</a>.
+            </p>
+          </details>
+
+          <div class="consent-checkbox">
+            <input type="checkbox" id="data-consent" name="data-consent" required>
+            <label for="data-consent">
+              J'accepte que mes données soient traitées selon la
+              <a href="privacy-policy.html">politique de confidentialité</a> du site.
+            </label>
+          </div>
+        </div>
+
+        <!-- Envoi -->
+        <div>
+          <button type="submit" class="btn-primary" aria-label="Envoyer le formulaire de contact">Envoyer</button>
+        </div>
+
+        <!-- Alternatives réseaux sociaux -->
+        <div class="social-links">
+          <p>Vous pouvez aussi nous contacter sur nos réseaux sociaux :</p>
+          <a href="https://www.instagram.com/visitscotland/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/visitscotland" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+            Facebook
+          </a>
+          <a href="https://x.com/VisitScotland" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+            X
+          </a>
+        </div>
       </form>
     </div>
   </section>
 
-  <section id="coordonnees" aria-labelledby="coordonnees">
+  <section id="contact-info" aria-labelledby="contact-info">
+    <h2>Nos coordonnées</h2>
     <div class="container">
-      <h2>Nos coordonnées</h2>
-
       <div class="info">
         <p>Vous pouvez également nous contacter via les informations suivantes :</p>
         <ul>
@@ -140,7 +179,7 @@
         </ul>
       </div>
 
-      <div class="responsive-map" aria-labelledby="map">
+      <div class="responsive-map">
         <iframe title="Carte de la localisation en Écosse"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1853247.2762502223!2d-6.227292556103479!3d56.4906712365694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4886c691c5b4fba9%3A0x93cfb91e14e4b615!2sScotland!5e0!3m2!1sen!2sfr!4v1618359872683!5m2!1sen!2sfr"
                 width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
@@ -150,10 +189,9 @@
     </div>
   </section>
 
-  <section id="faq" aria-labelledby="faq-heading">
-    <div class="container">
-      <h2 id="faq-heading">Questions fréquentes</h2>
-
+  <section id="faq" aria-labelledby="faq">
+      <h2>Questions fréquentes</h2>
+    <div class="faq-container">
       <details aria-labelledby="faq1-title">
         <summary id="faq1-title">Faut-il un visa pour visiter l'Écosse ?</summary>
         <p>Pour les citoyens européens, un passeport est suffisant pour un séjour touristique de moins de 6 mois.</p>
@@ -205,12 +243,11 @@
       </details>
     </div>
   </section>
-
 </main>
 
 <footer>
   <div class="logo">
-    <a href="index.html" aria-label="Haut de page">
+    <a href="index.html" aria-label="Page d'accueil">
       <img src="assets/images/logo_white.svg" alt="logo du site Scotland">
       <span>Scotland</span>
     </a>
@@ -218,45 +255,45 @@
   <!--  L'élément <footer> possède souvent différents liens, il n'a pour autant pas besoin d'être dans un élément <nav></nav>> cfr https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav -->
   <div class="footer-container">
     <div class="footer-menu">
-      <h4>Liens rapides</h4>
+      <h2>Liens rapides</h2>
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="decouverte.html">Découvrir</a></li>
+        <li><a href="discover.html">Découvrir</a></li>
         <li><a href="culture.html">Culture &amp; Traditions</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
 
     <div class="footer-legal">
-      <h4>Mentions & Confidentialité</h4>
+      <h2>Mentions &amp; Confidentialité</h2>
       <ul>
-        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-        <li><a href="legales.html">Mentions légales</a></li>
+        <li><a href="privacy-policy.html">Politique de confidentialité</a></li>
+        <li><a href="legal-notice.html">Mentions légales</a></li>
       </ul>
     </div>
 
     <div class="footer-follow">
-      <h4>Suivez-nous</h4>
+      <h2>Suivez-nous</h2>
       <div class="social">
         <ul>
           <li>
             <a href="https://www.instagram.com/visitscotland/" target="_blank">
-              <img src="assets/images/social_icons/instagram.png" alt="Instagram">
+              <img src="assets/ui-icons/instagram.png" alt="Instagram">
             </a>
           </li>
           <li>
             <a href="https://www.youtube.com/@visitscotland" target="_blank">
-              <img src="assets/images/social_icons/youtube.png" alt="Youtube">
+              <img src="assets/ui-icons/youtube.png" alt="Youtube">
             </a>
           </li>
           <li>
             <a href="https://x.com/VisitScotland" target="_blank">
-              <img src="assets/images/social_icons/twitter.png" alt="X ex-twitter">
+              <img src="assets/ui-icons/twitter.png" alt="X ex-twitter">
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/visitscotland" target="_blank">
-              <img src="assets/images/social_icons/facebook.png" alt="facebook">
+              <img src="assets/ui-icons/facebook.png" alt="facebook">
             </a>
           </li>
         </ul>
@@ -266,10 +303,15 @@
 
   <div class="copyright">
     <p>&copy; 2025 Visitez l'Écosse</p>
-    <img src="assets/images/social_icons/vache.svg" alt="Easter egg">
+    <img src="assets/ui-icons/vache.svg" alt="">
     <p>Tous droits réservés</p>
   </div>
 </footer>
-
+<button id="back-to-top" aria-label="Retour en haut de page" title="Retour en haut de page">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
 </body>
 </html>
