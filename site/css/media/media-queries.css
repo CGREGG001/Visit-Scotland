@@ -108,11 +108,48 @@
         /* ======================================
          * DISCOVERY
          * ====================================== */
-        /* ==========  ABOUT ========== */
+        /* ========== ABOUT ========== */
 
         #about-scotland,
         #highlands-video {
             padding-bottom: 0;
+        }
+
+        /* ======================================
+        * CONTACT
+        * ====================================== */
+
+        #contact-info {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+
+
+        /* ========== FAQ ========== */
+        #faq {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+
+            .responsive-map {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            iframe {
+                width: 90%;
+            }
+        }
         }
 
     }
@@ -120,6 +157,7 @@
 
 /* SMARTPHONES */
 @media (max-width: 768px) {
+
     header {
         position: sticky;
         top: 0;
@@ -246,9 +284,8 @@
         }
 
         /* ======================================
-         * DISCOVERY
+         * HOME
          * ====================================== */
-
         /* ========== HERO ========== */
 
         #hero-video {
@@ -380,6 +417,49 @@
                     padding: var(--spacing-sm) 0 0;
                 }
             }
+        }
+
+
+        #contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .responsive-map {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                iframe {
+                    width: 90%;
+                }
+            }
+        }
+
+        /* ======================================
+         * CONTACT
+         * ====================================== */
+        /* ========== CONTACT-HEADER  ========== */
+        #contact-header {
+            margin-top: 0;
+        }
+
+        #formulaire {
+            padding-bottom: 0;
+
+            .container {
+                margin: 0;
+            }
+
         }
 
     }

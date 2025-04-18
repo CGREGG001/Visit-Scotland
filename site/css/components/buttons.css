@@ -9,6 +9,7 @@
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-heavy);
     transition: background-color 0.25s ease-in-out;
+    text-align: center;
 
     &:hover {
         background-color: var(--color-btn-bg-hover);
@@ -25,19 +26,22 @@
 }
 
 .btn-secondary {
+    margin-top: var(--spacing-md);
     padding: .5rem 1rem;
     cursor: pointer;
+    border-radius: var(--border-radius);
     transition: background-color 0.25s ease-in-out;
+    box-shadow: var(--shadow-heavy);
+    border: 1px solid transparent;
 
     &:hover {
-        background-color: red;
+        background-color: var(--color-btn-bg-hover);
     }
 
     a {
         text-decoration: none;
 
         &:hover {
-            color: lightpink;
             text-decoration: none;
         }
     }

@@ -31,8 +31,8 @@
     /* ======================================
      * BOUTONS
      * ====================================== */
-    --color-btn-bg: #17359C;
-    --color-btn-bg-hover: #C090EC;
+    --color-btn-bg: #7821EA;
+    --color-btn-bg-hover: #BB86F5;
 
     /* ======================================
      * HEADER
@@ -63,7 +63,7 @@
      * BORDURES & EFFETS
      * ====================================== */
     --border-radius: 6px;
-    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-light: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     --shadow-heavy: 0 4px 14px rgba(0, 0, 0, 0.1);
     --blur: 15px;
 
@@ -98,7 +98,7 @@
         --color-text-footer: #C0C0C0;
         --color-text-footer-hover: #755faf;
 
-        --color-btn-bg: #0e2261;
+        --color-btn-bg: #412b57;
         --color-btn-bg-hover: #412b57;
 
         --color-link: #bb86f5;
