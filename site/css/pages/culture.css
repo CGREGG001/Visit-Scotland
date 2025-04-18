@@ -7,10 +7,6 @@ main {
     align-items: center;
 }
 
-section {
-    width: 100%;
-}
-
 h1,
 h2,
 h3 {
@@ -20,6 +16,12 @@ h3 {
 /* ========== ABOUT  ========== */
 #about-culture {
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     margin-top: var(--spacing-xl);
 
     h1 {
@@ -28,16 +30,17 @@ h3 {
 
     .about-container {
         max-width: var(--max-width-container-md);
-        margin: 0 auto;
+        /*margin: 0 auto;*/
 
         .about-content {
             max-width: var(--max-width-container-sm);
             padding: 0 var(--spacing-lg);
-            margin: 0 auto;
+            /*margin: 0 auto;*/
         }
     }
 }
 
+/* ========== PILIERS-CULTURE  ========== */
 #piliers-culture {
     background-color: var(--color-bg-section);
     max-width: var(--max-width-container-md);
@@ -106,13 +109,13 @@ h3 {
 
                 /*bouton play*/
                 audio::-webkit-media-controls-play-button {
-                    background-color: var(--color-link);
+                    background-color: var(--color-link-hover);
                     border-radius: 50%;
                 }
 
                 /*fond du lecteur*/
                 audio::-webkit-media-controls-panel {
-                    background-color: var(--color-link-hover);
+                    background-color: transparent;
                     border-radius: 0;
                     border: none;
                 }
@@ -122,6 +125,7 @@ h3 {
     }
 }
 
+/* ========== CONCLUSION  ========== */
 #conclusion {
     max-width: var(--max-width-container-sm);
     padding: 4rem 2rem;
