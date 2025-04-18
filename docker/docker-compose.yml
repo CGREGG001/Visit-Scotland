@@ -3,10 +3,10 @@ services:
     build:
       context: .  # Utilise le répertoire courant comme contexte pour la construction de l'image
       dockerfile: Dockerfile
-    image: nginx:alpine  # Nom de l'image construite
-    container_name: visit-scotland  # Nom du conteneur
+    image: visit-scotland-nginx:1.0  # Nom de l'image perso construite
+    container_name: ${CONTAINER_NAME} # Nom du conteneur -> .env
     ports:
-      - "8080:80"  # Mappe le port 80 du conteneur au port 8080 de l'hôte
+      - "${HOST_PORT}:80"  # Mappe le port 80 du conteneur au port 8080 de l'hôte -> .env
     volumes:
       - ../site:/usr/share/nginx/html
     networks:
@@ -15,4 +15,3 @@ services:
 networks:
   web-dev-exam:
     driver: bridge
-    
