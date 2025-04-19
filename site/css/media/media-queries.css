@@ -476,11 +476,11 @@
         }
 
         /* ======================================
-         * Privacy
+         * PRIVACY-POLICY & LEGAL-NOTICE
          * ====================================== */
-        /* ========== PRIVACY-POLICY  ========== */
 
-        #privacy-policy {
+        #privacy-policy,
+        #legal-notice {
             width: 100%;
             margin-top: 0;
             padding-left: var(--spacing-sm);
@@ -494,7 +494,6 @@
                 list-style: none;
             }
         }
-
     }
 
     footer {
