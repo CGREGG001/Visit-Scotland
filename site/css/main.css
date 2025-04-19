@@ -14,6 +14,7 @@
 @import url('./components/cards.css');
 @import url('./components/button-to-top.css');
 @import url('./components/formulaire.css');
+@import url('./components/cookie-banner.css');
 /* =======================
    PAGES
 ======================= */
@@ -22,6 +23,7 @@
 @import url('./pages/culture.css');
 @import url('./pages/contact.css');
 @import url('./pages/404.css');
+@import url('./pages/privacy.css');
 
 /* =======================
    MEDIA QUERIES

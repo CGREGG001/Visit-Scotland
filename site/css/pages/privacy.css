@@ -1,0 +1,30 @@
+/* ======================================
+ * Privacy
+ * ====================================== */
+/* ========== PRIVACY-POLICY  ========== */
+#privacy-policy {
+    width: 100%;
+    max-width: var(--max-width-container-sm);
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+
+    h1 {
+        font-size: var(--font-size-xxl);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    article {
+        ul {
+            padding: 0 2rem 2rem;
+        }
+        p {
+            text-align: start;
+        }
+    }
+    article:last-child ul {
+        list-style: none;
+    }
+}

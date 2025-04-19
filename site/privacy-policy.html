@@ -8,62 +8,65 @@
         content="Découvrez notre politique de confidentialité et comment nous traitons vos données personnelles sur Visitez l'Écosse.">
   <meta name="author" content="Colard Gregory">
   <meta name="keywords" content="Politique de confidentialité, RGPD, Protection des données, Écosse, Visitez l'Écosse">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
   <script src="scripts/nav.js" defer></script>
+  <script src="scripts/scroll-hide-header.js" defer></script>
+  <script src="scripts/button-to-top.js" defer></script>
 </head>
 <body>
-
-<header>
+<header id="header">
   <div class="header-container">
-    <nav>
-      <div class="menu" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false">
-        <button type="button" class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="navLinks" role="navigation">
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="discover.html">Découvrir</a></li>
-            <li><a href="culture.html">Culture &amp; Traditions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="vache">
-            <img src="assets/ui-icons/vache.svg" alt="tete de vache écossaise">
-          </div>
-        </div>
-      </div>
-    </nav>
     <div class="logo">
       <a href="index.html" aria-label="Accueil - Visitez l'Écosse">
         <img src="assets/images/logo_white.svg" alt="Logo du site Visitez l'Écosse">
         <span>Scotland</span>
       </a>
     </div>
+    <nav>
+      <div class="menu">
+        <button type="button" class="burger" aria-label="ouvrir ou fermer le menu de navigation" aria-expanded="false"
+                aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="navLinks" class="navLinks">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="discover.html">Découvrir</a></li>
+            <li><a href="culture.html">Culture &amp; Traditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="vache"> <!-- pour le mode mobile -->
+            <img src="assets/ui-icons/vache.svg" alt="" aria-hidden="true">
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
 
 <main>
-  <section class="privacy-policy">
+  <section id="privacy-policy" aria-labelledby="privacy-policy">
     <h1>Politique de Confidentialité</h1>
     <p class="last-update">Dernière mise à jour : 9 avril 2025</p>
 
-    <div class="policy-intro">
+    <article id="policy-intro" aria-labelledby="policy-intro">
+      <h2>Notre engagement pour la protection de vos données</h2>
       <p>
         Chez Visitez l'Écosse, nous accordons une grande importance à la protection de vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons, traitons et protégeons vos informations lorsque vous utilisez notre site web et nos services.
       </p>
       <p>
-        En utilisant notre site, vous acceptez les pratiques décrites dans cette politique de confidentialité. Si vous n'êtes pas d'accord avec nos pratiques, nous vous prions de ne pas utiliser notre site.
+        En poursuivant votre navigation après avoir été informé de notre politique de confidentialité, vous consentez explicitement à l’utilisation de vos données selon les termes précisés. Vous pouvez à tout moment retirer votre consentement.
       </p>
-    </div>
+    </article>
 
-    <article id="data-collection">
+    <article id="data-collection" aria-labelledby="data-collection">
       <h2>1. Données collectées</h2>
       <p>Nous collectons les catégories de données suivantes :</p>
       <ul>
@@ -74,19 +77,19 @@
       </ul>
     </article>
 
-    <article id="data-usage">
+    <article id="data-usage" aria-labelledby="data-usage">
       <h2>2. Utilisation des données</h2>
       <p>Nous utilisons vos données personnelles pour :</p>
       <ul>
         <li>Répondre à vos demandes d'information ou de conseil sur l'Écosse</li>
         <li>Personnaliser votre expérience sur notre site</li>
         <li>Améliorer nos services et notre contenu</li>
-        <li>Vous envoyer des informations sur nos services ou événements (uniquement avec votre consentement)</li>
+        <li>Vous envoyez des informations sur nos services ou événements (uniquement avec votre consentement).</li>
         <li>Respecter nos obligations légales</li>
       </ul>
     </article>
 
-    <article id="data-sharing">
+    <article id="data-sharing" aria-labelledby="data-sharing">
       <h2>3. Partage des données</h2>
       <p>Vos données personnelles peuvent être partagées avec :</p>
       <ul>
@@ -97,17 +100,17 @@
       <p>Nous ne vendons pas vos données personnelles à des tiers.</p>
     </article>
 
-    <article id="data-retention">
+    <article id="data-retention" aria-labelledby="data-retention">
       <h2>4. Conservation des données</h2>
       <p>
-        Nous conservons vos données personnelles pendant une durée de 2 ans à compter de votre dernière interaction avec nous. Après cette période, vos données sont soit supprimées, soit anonymisées.
+        Nous conservons vos données personnelles pendant une durée de deux ans à compter de votre dernière interaction avec nous. Après cette période, vos données sont soit supprimées, soit anonymisées.
       </p>
       <p>
         Les données des cookies sont conservées pendant 13 mois maximum.
       </p>
     </article>
 
-    <article id="data-security">
+    <article id="data-security" aria-labelledby="data-security">
       <h2>5. Sécurité des données</h2>
       <p>
         Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos données contre tout accès non autorisé, altération, divulgation ou destruction. Ces mesures comprennent :
@@ -120,7 +123,7 @@
       </ul>
     </article>
 
-    <article id="user-rights">
+    <article id="user-rights" aria-labelledby="user-rights">
       <h2>6. Vos droits</h2>
       <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
       <ul>
@@ -136,7 +139,7 @@
       </p>
     </article>
 
-    <article id="cookies">
+    <article id="cookies" aria-labelledby="cookies">
       <h2>7. Cookies et technologies similaires</h2>
       <p>
         Notre site utilise des cookies et des technologies similaires pour améliorer votre expérience de navigation. Les cookies sont de petits fichiers texte stockés sur votre appareil qui nous permettent de reconnaître votre navigateur.
@@ -153,21 +156,21 @@
       </p>
     </article>
 
-    <article id="children">
+    <article id="children" aria-labelledby="children">
       <h2>8. Protection des mineurs</h2>
       <p>
         Notre site n'est pas destiné aux enfants de moins de 16 ans. Nous ne collectons pas sciemment des données personnelles concernant des enfants. Si vous êtes parent ou tuteur et pensez que votre enfant nous a fourni des informations personnelles, veuillez nous contacter pour que nous puissions prendre les mesures nécessaires.
       </p>
     </article>
 
-    <article id="changes">
+    <article id="changes" aria-labelledby="changes">
       <h2>9. Modifications de la politique de confidentialité</h2>
       <p>
         Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec une date de mise à jour. Nous vous encourageons à consulter régulièrement cette page pour prendre connaissance des éventuelles modifications.
       </p>
     </article>
 
-    <article id="contact">
+    <article id="contact" aria-labelledby="contact">
       <h2>10. Nous contacter</h2>
       <p>
         Si vous avez des questions concernant cette politique de confidentialité ou la manière dont nous traitons vos données personnelles, veuillez nous contacter :
@@ -186,14 +189,15 @@
 
 <footer>
   <div class="logo">
-    <a href="#" aria-label="Haut de page">
+    <a href="index.html" aria-label="Page d'accueil">
       <img src="assets/images/logo_white.svg" alt="logo du site Scotland">
       <span>Scotland</span>
     </a>
   </div>
+  <!--  L'élément <footer> possède souvent différents liens, il n'a pour autant pas besoin d'être dans un élément <nav></nav>> cfr https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav -->
   <div class="footer-container">
     <div class="footer-menu">
-      <h4>Liens rapides</h4>
+      <h2>Liens rapides</h2>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="discover.html">Découvrir</a></li>
@@ -203,7 +207,7 @@
     </div>
 
     <div class="footer-legal">
-      <h4>Mentions & Confidentialité</h4>
+      <h2>Mentions &amp; Confidentialité</h2>
       <ul>
         <li><a href="privacy-policy.html">Politique de confidentialité</a></li>
         <li><a href="legal-notice.html">Mentions légales</a></li>
@@ -211,7 +215,7 @@
     </div>
 
     <div class="footer-follow">
-      <h4>Suivez-nous</h4>
+      <h2>Suivez-nous</h2>
       <div class="social">
         <ul>
           <li>
@@ -241,10 +245,16 @@
 
   <div class="copyright">
     <p>&copy; 2025 Visitez l'Écosse</p>
-    <img src="assets/ui-icons/vache.svg" alt="Easter egg">
+    <img src="assets/ui-icons/vache.svg" alt="">
     <p>Tous droits réservés</p>
   </div>
 </footer>
 
+<button id="back-to-top" aria-label="Retour en haut de page" title="Retour en haut de page">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
 </body>
 </html>
