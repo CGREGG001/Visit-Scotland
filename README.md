@@ -19,14 +19,10 @@ Il propose une **découverte immersive de l’Écosse** à travers des contenus 
 
 ---
 
-> <i class="fak fa-warning vs-icon vs-icon--size-md vs-icon--warning vs-icon--variant-tertiary vs-warning__icon vs-warning__icon" style="" data-test="vs-icon"></i> test icon.
-
-
-
 <details>
   <summary>🇬🇧 English</summary>
 
-## 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Table of Contents 
+## Table of Contents 
 - [Local Deployment with Docker](#local-deployment-with-docker)
 - [Site Structure (Navigation)](#site-structure-navigation)
 - [Project Structure (Files)](#project-structure-files)
