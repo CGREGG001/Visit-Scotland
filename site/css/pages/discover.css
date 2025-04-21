@@ -38,6 +38,7 @@ h3 {
             img {
                 margin-top: var(--spacing-lg);
                 width: 100%;
+                height: auto;
             }
         }
     }
