@@ -86,8 +86,23 @@ docker-compose down
 
 ---
 
+## 🛠️ CSS Automation
+
+All CSS files in this project are automatically organized and optimized whenever a change is made.  
+This automation ensures a clean, minified, and production-ready `main.min.css` file — without any manual intervention.
+
+The tools used include:
+
+- **PostCSS** – to transform and minify the final CSS
+- **Chokidar** – to watch CSS files and trigger the build process automatically
+- **System Notifications** – to inform the user when the build completes successfully
+
+> ⚠️ To learn more about CSS automation: [View the CSS documentation](documentation/css-build-process.md)
+
+---
+
 ## Learning Objectives
-- Structure a multi-page website using HTML and CSS.  
+- Structure a multipage website using HTML and CSS.  
 - Integrate multimedia elements (images, videos, audio).  
 - Design a responsive layout for better accessibility.  
 - Configure a web server to handle requests, security, and redirects.  
@@ -202,6 +217,21 @@ docker-compose down
 - **Docker** : Conteneurisation des applications pour un déploiement cohérent et reproductible.
 
 ---
+
+## Automatisation du CSS
+
+L'ensemble des fichiers CSS de ce projet est organisé et optimisé automatiquement à chaque modification.  
+Cette automatisation permet d’assurer un fichier final (`main.min.css`) propre, minifié, et prêt pour la production sans intervention manuelle.
+
+Les outils utilisés incluent :
+
+- **PostCSS** : pour transformer et minifier le CSS final
+- **Chokidar** : pour surveiller les fichiers et déclencher automatiquement la compilation
+- **Notifications système** : pour signaler la réussite de la compilation
+
+> ⚠️ Pour en savoir plus sur l’automatisation du CSS : [Voir la documentation CSS](documentation/css-build-process.md)
+
+--- 
 
 ## Objectifs pédagogiques
 - Structurer un site multi-pages en HTML et CSS.
