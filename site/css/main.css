@@ -1,32 +1,33 @@
 /* =======================
    BASE
 ======================= */
-@import url('./base/reset.css');
-@import url('./base/variables.css');
-@import url('./base/layout.css');
-@import url('./base/base.css');
+@import "./base/normalize.css";
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/layout.css";
+@import "./base/base.css";
 
 /* =======================
    COMPONENTS
 ======================= */
-@import url('./components/logo.css');
-@import url('./components/buttons.css');
-@import url('./components/cards.css');
-@import url('./components/button-to-top.css');
-@import url('./components/formulaire.css');
-@import url('./components/cookie-banner.css');
+@import "./components/buttons.css";
+@import "./components/button-to-top.css";
+@import "./components/cards.css";
+@import "./components/cookie-banner.css";
+@import "./components/formulaire.css";
+@import "./components/logo.css";
 /* =======================
    PAGES
 ======================= */
-@import url('./pages/home.css');
-@import url('pages/discover.css');
-@import url('./pages/culture.css');
-@import url('./pages/contact.css');
-@import url('./pages/404.css');
-@import url('./pages/privacy.css');
-@import url('./pages/legal.css');
+@import "./pages/home.css";
+@import "./pages/discover.css";
+@import "./pages/culture.css";
+@import "./pages/contact.css";
+@import "./pages/404.css";
+@import "./pages/legal.css";
+@import "./pages/privacy.css";
 
 /* =======================
    MEDIA QUERIES
 ======================= */
-@import url('responsive/media-queries.css');
+@import "./responsive/media-queries.css";

@@ -32,3 +32,9 @@ build/
 
 # Fichiers de sauvegarde
 *~
+
+# Dependency directories
+node_modules/
+
+# Build output
+# css/main.min.css
