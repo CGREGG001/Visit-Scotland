@@ -1,0 +1,25 @@
+{
+  "name": "visit-scotland",
+  "version": "1.0.0",
+  "description": "## Project Overview This project is a responsive static website developed using HTML and CSS as part of the IPFA BIDA 01 exam. It offers an immersive discovery of Scotland through visual and audio content, while ensuring a smooth experience across all screen sizes (desktop, tablet, mobile).",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build:css": "postcss site/css/main.css -o site/css/main.min.css",
+    "watch:css": "chokidar 'site/css/**/*.css' -c 'npm run build:css && node site/scripts/notify-css.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "chokidar": "^4.0.3",
+    "chokidar-cli": "^3.0.0",
+    "node-notifier": "^10.0.1",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0"
+  },
+  "dependencies": {
+    "cssnano": "^7.0.6"
+  }
+}
